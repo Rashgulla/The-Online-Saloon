@@ -63,16 +63,16 @@
         </div>
     </div>
 
+
+
     <div class="copyrights">
 			<div class="container">
 				<div class="footer-distributed">
 					<div class="footer-left">
 						<p class="footer-links">
 							<a href="#">Home</a>
-							<a href="#">Blog</a>
 							<a href="#">Pricing</a>
 							<a href="#">About</a>
-							<a href="#">Faq</a>
 							<a href="#">Contact</a>
 						</p>
 						<p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">The Online Saloon</p>

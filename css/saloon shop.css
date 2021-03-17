@@ -1,0 +1,40 @@
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.jumbotron {
+   margin-bottom: 0.5;
+   float: center;
+}
+
+.carousel-inner{
+  margin: top;
+  height: 500PX;
+  width: 1500PX;
+}
+
+.panel-heading{
+  margin-top: 20px;
+}
+
+.row{
+  border: 2px;
+  border-color: #bbb;
+}
+.col-sm-4{
+  border: 2px;
+  border-color: #bbb;
+}
+.panel-panel-primary{
+  border: 2px;
+  border-color: 
+}
+   
+footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+       float: center;
+    }
