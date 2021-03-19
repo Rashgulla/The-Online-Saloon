@@ -9,8 +9,11 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<link rel="stylesheet" href="C:/xampp11/htdocs/TheOnlineSaloon/css/saloon shop.css">
+<link rel="stylesheet" href="css/saloon shop.css">
     <title>saloon shop</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
    
@@ -73,13 +76,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="C:\xampp11\htdocs\TheOnlineSaloon\images\SI1.jpg" class="d-block w-100" alt="...">
+      <img src="images\slide1.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="C:\xampp11\htdocs\TheOnlineSaloon\images\SI2.jpg" class="d-block w-100" alt="...">
+      <img src="images\slide2.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="C:\xampp11\htdocs\TheOnlineSaloon\images\SI3.jpg" class="d-block w-100" alt="...">
+      <img src="images\slide3.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
@@ -106,10 +109,10 @@
     <div class="col-sm-4">
       <div class="panel panel-primary">
         <div class="panel-heading">HAPPY KESH KALA</div>
-        <div class="panel-body"><img src="C:\xampp11\htdocs\TheOnlineSaloon\img\saloon1.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">CHANDKHEDA</div>
-        <P>MAKE YOUR STYLE</P>
-        <button> <a href="#">Read More ...</a></button>
+        <div class="panel-body"><img src="img\saloon1.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Location:-CHANDKHEDA <br>
+        <P></P>
+        <a href="#" class="btn btn-primary text-center">Read More...</a> </div>
       </div>
     </div>
 
@@ -117,9 +120,9 @@
     <div class="col-sm-4"> 
       <div class="panel panel-danger">
         <div class="panel-heading">BARBAR SALOON</div>
-        <div class="panel-body"><img src="C:\xampp11\htdocs\TheOnlineSaloon\img\saloon2.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">New C.G.Road</div>
-        <button> <a href="#">Read More...</a></button>
+        <div class="panel-body"><img src="img\saloon2.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Location:-New C.G.Road <br>
+        <a href="#" class="btn btn-primary text-center">Read More...</a> </div>
       </div>
     </div>
 
@@ -127,9 +130,9 @@
     <div class="col-sm-4"> 
       <div class="panel panel-success">
         <div class="panel-heading">Black Penther saloon</div>
-        <div class="panel-body"><img src="C:\xampp11\htdocs\TheOnlineSaloon\img\saloon3.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">I.O.C Road</div>
-        <button> <a href="#">Read More...</a></button>
+        <div class="panel-body"><img src="img\saloon3.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Location:-I.O.C Road <br>
+        <a href="#" class="btn btn-primary text-center">Read More...</a> </div>
       </div>
     </div>
   </div>
@@ -140,9 +143,9 @@
     <div class="col-sm-4">
       <div class="panel panel-primary">
         <div class="panel-heading">Stylo saloon</div>
-        <div class="panel-body"><img src="C:\xampp11\htdocs\TheOnlineSaloon\img\saloon4.jpeg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Chandkheda gam</div>
-        <button> <a href="#">Read More...</a></button>
+        <div class="panel-body"><img src="img\saloon4.jpeg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Location:-Chandkheda gam <br>
+        <a href="#" class="btn btn-primary text-center">Read More...</a> </div>
       </div>
     </div>
 
@@ -150,9 +153,9 @@
     <div class="col-sm-4"> 
       <div class="panel panel-primary">
         <div class="panel-heading"> NEW Kesh Kala </div>
-        <div class="panel-body"><img src="C:\xampp11\htdocs\TheOnlineSaloon\img\saloon5.jpeg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Visat</div>
-        <button> <a href="#">Read More...</a></button>
+        <div class="panel-body"><img src="img\saloon5.jpeg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Location:-Visat <br>
+        <a href="#" class="btn btn-primary text-center">Read More...</a> </div>
       </div>
     </div>
 
@@ -160,9 +163,9 @@
     <div class="col-sm-4"> 
       <div class="panel panel-primary">
         <div class="panel-heading">BLACK HAIR </div>
-        <div class="panel-body"><img src="C:\xampp11\htdocs\TheOnlineSaloon\img\saloon6.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">S.G.HIGHWAY</div>
-        <button> <a href="#">Read More...</a></button>
+        <div class="panel-body"><img src="img\saloon6.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Location:-S.G.HIGHWAY <br>
+        <a href="#" class="btn btn-primary text-center">Read More...</a> </div>
       </div>
     </div>
   </div>
@@ -170,10 +173,7 @@
 
 <footer class="container-fluid text-center">
    <p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">The Online Saloon</p>
-  <form class="form-inline">Get deals:
-    <input type="email" class="form-control" size="50" placeholder="Email Address">
-    <button type="button" class="btn btn-danger">Sign Up</button>
-  </form>
+  
 </footer>
 
 
