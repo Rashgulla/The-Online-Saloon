@@ -6,9 +6,9 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Appointment</title>
      
-     <link rel="stylesheet" href="C:/xampp11/htdocs/TheOnlineSaloon/css/Bootstrap.min.css">
-     <link rel="stylesheet" href="C:/xampp11/htdocs/TheOnlineSaloon/css/datepicker.css">
-     <link rel="stylesheet" href="C:/xampp11/htdocs/TheOnlineSaloon/css/appointment.css">
+     <link rel="stylesheet" href="css/Bootstrap.min.css">
+     <link rel="stylesheet" href="css/datepicker.css">
+     <link rel="stylesheet" href="css/appointment.css">
       
     
 </head>
@@ -19,7 +19,7 @@
                    <div class="col-sm-7">
                     <div class="content">
                     	<h1>The Online Saloon </h1> 
-                 	      <img src="C:\xampp11\htdocs\TheOnlineSaloon\images\logo.jpeg" alt="TOS"   width="228" height="228">
+                 	      <img src="images\logo.jpeg" alt="TOS"   width="228" height="228">
                  	    <p>LET'S MAKE AN APPOINTMENT FOR YOUR LIFE & STYLE</p>               	
                     </div>
                    </div>
@@ -86,10 +86,10 @@
         
          <!-- Optiona1 Javascript -->
           <!-- jquery first, then Popper.js, then Bootstrap JS -->
-          <script src="C:/xampp11/htdocs/TheOnlineSaloon/js/jquery-3.3.1.min.js"></script> 
-          <script src="C:/xampp11/htdocs/TheOnlineSaloon/js/Popper.min.js"></script>
-          <script src="C:/xampp11/htdocs/TheOnlineSaloon/js/bootstrap.min.js"></script>
-          <script src="C:/xampp11/htdocs/TheOnlineSaloon/js/bootstrap-datepicker.js" ></script>
+          <script src="js/jquery-3.3.1.min.js"></script> 
+          <script src="js/Popper.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/bootstrap-datepicker.js" ></script>
 
           <script>
           	$(document).ready(function(){
