@@ -28,7 +28,7 @@
     $result = mysqli_query($conn,$sql);
 
     if($result){
-        echo "<script>window.open('C:\xampp\htdocs\The-Online-Saloon\user\user_home.php','_self')</script>";
+        echo "<script>window.open('../user/user_home.php','_self')</script>";
     }
     else{
         echo "account not created".mysqli_error($conn);
