@@ -47,10 +47,7 @@
                 </li>
 
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
+
 
             <div class="mx-2">
                 <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
@@ -121,7 +118,14 @@
                             <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
                             <input type="password" class="form-control" id="cexampleInputPassword1">
                         </div>
-
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Mobile number</label>
+                            <input type="text" class="form-control" id="exampleInputMobile">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Address</label>
+                            <textarea name="address" id="exampleInputAddress" cols="60" rows="10"></textarea>
+                        </div>
                         <button type="submit" class="btn btn-primary">Create account</button>
                     </form>
                 </div>
