@@ -21,16 +21,14 @@
     if(!$conn){
         die("NO connection :".mysqli_connect_error());
     }
-    else{
-        echo "OK<br>";
-    }
+
 
     $sql = "INSERT INTO `user_registration` (`email`, `username`, `password`, `cpassword`, `mobile`, `hnumber`, `society`, `landmark`, `city`, `pin`) 
     VALUES ('$email', '$username',' $password', '$cpassword', '$mobile', '$hnumber', '$society', '$landmark', '$city', '$pin')";
     $result = mysqli_query($conn,$sql);
 
     if($result){
-        echo "account created";
+        echo "<script>window.open('C:\xampp\htdocs\The-Online-Saloon\user\user_home.php','_self')</script>";
     }
     else{
         echo "account not created".mysqli_error($conn);
