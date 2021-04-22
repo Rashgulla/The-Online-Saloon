@@ -25,8 +25,8 @@
         echo "OK<br>";
     }
 
-    $sql = INSERT INTO `user_registration` (`email`, `username`, `password`, `cpassword`, `mobile`, `hnumber`, `society`, `landmark`, `city`, `pin`) 
-    VALUES ('$email', '$username',' $password', '$cpassword', '$mobile', '$hnumber', '$society', '$landmark', '$city', '$pin');
+    $sql = "INSERT INTO `user_registration` (`email`, `username`, `password`, `cpassword`, `mobile`, `hnumber`, `society`, `landmark`, `city`, `pin`) 
+    VALUES ('$email', '$username',' $password', '$cpassword', '$mobile', '$hnumber', '$society', '$landmark', '$city', '$pin')";
     $result = mysqli_query($conn,$sql);
 
     if($result){
