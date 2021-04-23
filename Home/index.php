@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
 
@@ -67,7 +69,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form action="user_login.php" method="post">
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
@@ -78,11 +80,8 @@
                             <label for="exampleInputPassword1" class="form-label">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1">
                         </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Login</button>
+
+                        <button type="submit" class="btn btn-primary" name=login>Login</button>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -120,32 +119,9 @@
                         </div>
                         <div class="mb-3">
                             <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="cexampleInputPassword1" name="cpassword">
+                            <input type="password" class="form-control" id="cexampleInputPassword1" name="confirm_password">
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputMobile" class="form-label">Mobile number</label>
-                            <input type="number" class="form-control" id="exampleInputMobile" name="mobile">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputHouse" class="form-label">House/Flat No.</label>
-                            <input type="text" class="form-control" id="exampleInputHouse" name="hnumber">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputSociety" class="form-label">Society/Apartment</label>
-                            <input type="text" class="form-control" id="exampleInputSociety" name="society">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputLandmark" class="form-label">Landmark</label>
-                            <input type="text" class="form-control" id="exampleInputLandmark" name="landmark">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputCity" class="form-label">city</label>
-                            <input type="text" class="form-control" id="exampleInputCity" name="city">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPin" class="form-label">PIN code</label>
-                            <input type="number" class="form-control" id="exampleInputPin" name="pin">
-                        </div>
+
                         <button type="submit" class="btn btn-primary">Create account</button>
                     </form>
                 </div>
