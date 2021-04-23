@@ -6,9 +6,9 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Appointment</title>
      
-     <link rel="stylesheet" href="css/Bootstrap.min.css">
-     <link rel="stylesheet" href="css/datepicker.css">
-     <link rel="stylesheet" href="css/appointment.css">
+     <link rel="stylesheet" href="../css/Bootstrap.min.css">
+     <link rel="stylesheet" href="../css/datepicker.css">
+     <link rel="stylesheet" href="../css/appointment.css">
       
     
 </head>
@@ -19,7 +19,7 @@
                    <div class="col-sm-7">
                     <div class="content">
                     	<h1>The Online Saloon </h1> 
-                 	      <img src="images\logo.jpeg" alt="TOS"   width="228" height="228">
+                 	      <img src="../images/logo.jpeg" alt="TOS"   width="228" height="228">
                  	    <p>LET'S MAKE AN APPOINTMENT FOR YOUR LIFE & STYLE</p>               	
                     </div>
                    </div>
