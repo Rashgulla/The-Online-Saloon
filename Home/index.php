@@ -165,7 +165,7 @@
         </a>
     </div>
     <hr>
-    <center>
+    
     <div class="container">
         <h3>Do you want to Register you salon to get online appointments??</h3>
         <hr>
@@ -173,7 +173,7 @@
         <button type="button" class="btn btn-success ml-4">Sign Up</button>
         
     </div>
-    </center>
+    
 
 
     <!-- Optional JavaScript; choose one of the two! -->
