@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="en">
 
@@ -9,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <title>The Online Salon</title>
 </head>
@@ -19,8 +16,7 @@
     <!--navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">The Online Salon</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -33,8 +29,7 @@
                     <a class="nav-link" href="about.php">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Services
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -72,8 +67,7 @@
                     <form action="user_login.php" method="post">
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
@@ -105,8 +99,7 @@
                     <form action="user_reg_con.php" method="post">
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" name="email"
-                                aria-describedby="emailHelp">
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
@@ -145,7 +138,6 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Appointment</h5>
                     <p>Now book your appointment by sitting there.</p>
-                    <button class="btn btn-success">Get Appointment</button>
                 </div>
             </div>
             <div class="carousel-item">
@@ -153,7 +145,6 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Products</h5>
                     <p>Get our products online</p>
-                    <button class="btn btn-danger">Products</button>
                 </div>
             </div>
             <div class="carousel-item">
@@ -161,7 +152,6 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Register your shop</h5>
                     <p>Register your shop to get online customers at your shop</p>
-                    <button class="btn btn-light">Register shop</button>
                 </div>
             </div>
         </div>
@@ -174,66 +164,23 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-
-    <!--cards-->
-    <div class="container my-4">
-        <div class="row mb-2">
-            <div class="col-md-6">
-                <div
-                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">World</strong>
-                        <h3 class="mb-0">Featured post</h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                            lead-in to additional content.</p>
-                        <a href="#" class="stretched-link">Continue reading</a>
-                    </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                            preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
-                            aria-label="Placeholder: Thumbnail">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em">Thumbnail</text>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div
-                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-success">Design</strong>
-                        <h3 class="mb-0">Post title</h3>
-                        <div class="mb-1 text-muted">Nov 11</div>
-                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                        <a href="#" class="stretched-link">Continue reading</a>
-                    </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                            preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
-                            aria-label="Placeholder: Thumbnail">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em">Thumbnail</text>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <hr>
+    <center>
+    <div class="container">
+        <h3>Do you want to Register you salon to get online appointments??</h3>
+        <hr>
+        <button type="button" class="btn btn-success mr-4">Login</button>
+        <button type="button" class="btn btn-success ml-4">Sign Up</button>
+        
     </div>
+    </center>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

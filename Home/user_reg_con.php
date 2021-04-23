@@ -1,6 +1,6 @@
 <?php
 
-    include('user_conn.php');
+    include('connect.php');
 
     $email = $_POST['email'];
     $username = $_POST['username'];
