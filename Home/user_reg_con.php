@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
     include('connect.php');
 
     $email = $_POST['email'];
