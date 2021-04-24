@@ -2,7 +2,7 @@
 include('adminpartials/head.php');
 
 
-//session_start();
+session_start();
 
 if (isset($_POST['login'])) {
 
@@ -13,8 +13,8 @@ if (isset($_POST['login'])) {
 
 
     $sql = "SELECT * FROM admins WHERE email='$email' AND password='$password'";
-    $result = $conn->query($sql);
-    $final = $result->fetch_assoc();
+    $result=$conn->query($sql);
+    $final=$result->fetch_assoc();
 
 
 
