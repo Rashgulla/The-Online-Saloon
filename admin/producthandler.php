@@ -6,11 +6,11 @@ $name = $_POST['name'];
 $price = $_POST['price'];
 $description = $_POST['description'];
 
-$target = "../uploads";
+$target = "../admin/uploads";
 $file_path = $target.basename($_FILES['picture']['name']);
 $file_name = $_FILES['picture']['name'];
 $file_tmp = $_FILES['picture']['tmp_name'];
-$file_store = "../uploads".$file_name;
+$file_store = "../admin/uploads".$file_name;
 
 move_uploaded_file($file_tmp, $file_store);
 
