@@ -1,5 +1,5 @@
 <?php
-
+ 
     include('connect.php');
 
     $email = $_POST['email'];
