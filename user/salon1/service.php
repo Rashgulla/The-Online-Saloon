@@ -1,8 +1,12 @@
+<? php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>THE ONLINE SALON:-saloon1</title>
+        <title>THE ONLINE SALON</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
@@ -67,10 +71,10 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
                         <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link active">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link active">Service</a>
                         <a href="price.html" class="nav-item nav-link">Price</a>
-            <!--            <a href="team.html" class="nav-item nav-link">Barber</a>   -->
+                 <!--       <a href="team.html" class="nav-item nav-link">Barber</a> -->
                         <a href="portfolio.html" class="nav-item nav-link">Gallery</a>
                  <!--       <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
@@ -78,7 +82,7 @@
                                 <a href="blog.html" class="dropdown-item">Blog Page</a>
                                 <a href="single.html" class="dropdown-item">Single Page</a>
                             </div>
-                        </div>   -->
+                        </div>  -->
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -92,11 +96,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2>About Us</h2>
+                        <h2>Service</h2>
                     </div>
                     <div class="col-12">
                         <a href="">Home</a>
-                        <a href="">About Us</a>
+                        <a href="">Service</a>
                     </div>
                 </div>
             </div>
@@ -104,92 +108,56 @@
         <!-- Page Header End -->
 
 
-        <!-- About Start -->
-        <div class="about">
+        <!-- Service Start -->
+        <div class="service">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-md-6">
-                        <div class="about-img">
-                            <img src="img/about.jpg" alt="Image">
+                <div class="section-header text-center">
+                    <p>Our Salon Services</p>
+                    <h2>Best Salon and Barber Services for You</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-1.jpg" alt="Image">
+                            </div>
+                            <h3>Hair Cut</h3>
+                            <p>
+                                WE PROVIDES BEST HAIR CUT IN DIFFERENT STYLE.
+                            </p>
+                            <a class="btn" href="">Learn More</a>
                         </div>
                     </div>
-                    <div class="col-lg-7 col-md-6">
-                        <div class="section-header text-left">
-                            <p>Learn About Us</p>
-                            <h2>10+ Years Experience</h2>
-                        </div>
-                        <div class="about-text">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-2.jpg" alt="Image">
+                            </div>
+                            <h3>Beard Style</h3>
                             <p>
-                                WE HAVE A 10+ YEARS EXPRIENCE WITH OUR SALON. WE PROVIDES BEST SERVICES.
+                                WE PROVIDES BEST BEARD SAVING IN DIFFERENT STYLE.
                             </p>
-                            
+                            <a class="btn" href="">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-3.jpg" alt="Image">
+                            </div>
+                            <h3>Color & Wash</h3>
+                            <p>
+                                COLOR YOUR BEARD AND HAIR...  <br> ALSO WE PROVIDES WASH OF YOUR HAIR,BEARD AND FACE. 
+                            </p>
                             <a class="btn" href="">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- About End -->
+        <!-- Service End -->
 
 
-              <!-- Team Start -->
-              <div class="team">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <p>Our Barber Team</p>
-                        <h2>Meet Our Hair Cut Expert Barber</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="team-item">
-                                <div class="team-img">
-                                    <img src="img/team-1.jpg" alt="Team Image">
-                                </div>
-                                <div class="team-text">
-                                    <h2>Amit padar</h2>
-                                    <p>Master Barber</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="team-item">
-                                <div class="team-img">
-                                    <img src="img/team-2.jpg" alt="Team Image">
-                                </div>
-                                <div class="team-text">
-                                    <h2>Divyesh jani</h2>
-                                    <p>Hair Expert</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="team-item">
-                                <div class="team-img">
-                                    <img src="img/team-3.jpg" alt="Team Image">
-                                </div>
-                                <div class="team-text">
-                                    <h2>Ganesh kali</h2>
-                                    <p>Beard Expert</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="team-item">
-                                <div class="team-img">
-                                    <img src="img/team-4.jpg" alt="Team Image">
-                                </div>
-                                <div class="team-text">
-                                    <h2>Joni kamil</h2>
-                                    <p>Color Expert</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Team End -->
-            
-    
         <!-- Footer Start -->
         <div class="footer">
             <div class="container">
@@ -214,11 +182,10 @@
                             <div class="col-md-6">
                                 <div class="footer-link">
                                     <h2>Quick Links</h2>
-                                    <a href="">Home</a>
+                                    <a href="">HOME</a>
                                     <a href="">Terms of use</a>
                                     <a href="../appointment.html">Appointment</a>
                                     <a href="">Help</a>
-
                                 </div>
                             </div>
                         </div>
@@ -240,7 +207,7 @@
             <div class="container copyright">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>&copy; <a href="#">THE ONLINE SALON</a> @ All Right Reserved.</p>
+                        <p>&copy; <a href="#">THE ONLINE SALON</a>@ All Right Reserved.</p>
                     </div>
                     <div class="col-md-6">
                         <p>Designed By <a href="">TEAM JSP</a></p>

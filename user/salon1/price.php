@@ -1,8 +1,12 @@
+<? php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>THE ONLINE SALON</title>
+        <title>THE LONLINE SALON</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
@@ -68,11 +72,11 @@
                     <div class="navbar-nav ml-auto">
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link active">Service</a>
-                        <a href="price.html" class="nav-item nav-link">Price</a>
-                 <!--       <a href="team.html" class="nav-item nav-link">Barber</a> -->
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="price.html" class="nav-item nav-link active">Price</a>
+                  <!--      <a href="team.html" class="nav-item nav-link">Barber</a>   -->
                         <a href="portfolio.html" class="nav-item nav-link">Gallery</a>
-                 <!--       <div class="nav-item dropdown">
+                    <!--    <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu">
                                 <a href="blog.html" class="dropdown-item">Blog Page</a>
@@ -92,11 +96,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Service</h2>
+                        <h2>Price</h2>
                     </div>
                     <div class="col-12">
                         <a href="">Home</a>
-                        <a href="">Service</a>
+                        <a href="">Price</a>
                     </div>
                 </div>
             </div>
@@ -104,54 +108,150 @@
         <!-- Page Header End -->
 
 
-        <!-- Service Start -->
-        <div class="service">
+        <!-- Pricing Start -->
+        <div class="price">
             <div class="container">
                 <div class="section-header text-center">
-                    <p>Our Salon Services</p>
-                    <h2>Best Salon and Barber Services for You</h2>
+                    <p>Our Best Pricing</p>
+                    <h2>We Provide Best Price in the City</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="service-item">
-                            <div class="service-img">
-                                <img src="img/service-1.jpg" alt="Image">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="price-item">
+                            <div class="price-img">
+                                <img src="img/price-1.jpg" alt="Image">
                             </div>
-                            <h3>Hair Cut</h3>
-                            <p>
-                                WE PROVIDES BEST HAIR CUT IN DIFFERENT STYLE.
-                            </p>
-                            <a class="btn" href="">Learn More</a>
+                            <div class="price-text">
+                                <h2>Hair Cut</h2>
+                                <h3>Rs.200</h3>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="service-item">
-                            <div class="service-img">
-                                <img src="img/service-2.jpg" alt="Image">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="price-item">
+                            <div class="price-img">
+                                <img src="img/price-2.jpg" alt="Image">
                             </div>
-                            <h3>Beard Style</h3>
-                            <p>
-                                WE PROVIDES BEST BEARD SAVING IN DIFFERENT STYLE.
-                            </p>
-                            <a class="btn" href="">Learn More</a>
+                            <div class="price-text">
+                                <h2>Hair Wash</h2>
+                                <h3>Rs.300</h3>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="service-item">
-                            <div class="service-img">
-                                <img src="img/service-3.jpg" alt="Image">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="price-item">
+                            <div class="price-img">
+                                <img src="img/price-3.jpg" alt="Image">
                             </div>
-                            <h3>Color & Wash</h3>
-                            <p>
-                                COLOR YOUR BEARD AND HAIR...  <br> ALSO WE PROVIDES WASH OF YOUR HAIR,BEARD AND FACE. 
-                            </p>
-                            <a class="btn" href="">Learn More</a>
+                            <div class="price-text">
+                                <h2>Hair Color</h2>
+                                <h3>Rs.250</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="price-item">
+                            <div class="price-img">
+                                <img src="img/price-4.jpg" alt="Image">
+                            </div>
+                            <div class="price-text">
+                                <h2>Hair Shave</h2>
+                                <h3>Rs.150</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="price-item">
+                            <div class="price-img">
+                                <img src="img/price-5.jpg" alt="Image">
+                            </div>
+                            <div class="price-text">
+                                <h2>Hair styleing</h2>
+                                <h3>Rs.250</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="price-item">
+                            <div class="price-img">
+                                <img src="img/price-6.jpg" alt="Image">
+                            </div>
+                            <div class="price-text">
+                                <h2>Facial</h2>
+                                <h3>Rs.500</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="price-item">
+                            <div class="price-img">
+                                <img src="img/price-7.jpg" alt="Image">
+                            </div>
+                            <div class="price-text">
+                                <h2>Shampoo</h2>
+                                <h3>Rs.250</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="price-item">
+                            <div class="price-img">
+                                <img src="img/price-8.jpg" alt="Image">
+                            </div>
+                            <div class="price-text">
+                                <h2>Beard Trim</h2>
+                                <h3>Rs.200</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="price-item">
+                            <div class="price-img">
+                                <img src="img/price-9.jpg" alt="Image">
+                            </div>
+                            <div class="price-text">
+                                <h2>Beard Shave</h2>
+                                <h3>Rs.250</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="price-item">
+                            <div class="price-img">
+                                <img src="img/price-10.jpg" alt="Image">
+                            </div>
+                            <div class="price-text">
+                                <h2>Wedding Cut</h2>
+                                <h3>Rs.999</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="price-item">
+                            <div class="price-img">
+                                <img src="img/price-11.jpg" alt="Image">
+                            </div>
+                            <div class="price-text">
+                                <h2>Clean Up</h2>
+                                <h3>Rs.550</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="price-item">
+                            <div class="price-img">
+                                <img src="img/price-12.jpg" alt="Image">
+                            </div>
+                            <div class="price-text">
+                                <h2>Massage</h2>
+                                <h3>Rs.350</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Service End -->
+        <!-- Pricing End -->
 
 
         <!-- Footer Start -->
@@ -182,7 +282,7 @@
                                     <a href="">Terms of use</a>
                                     <a href="../appointment.html">Appointment</a>
                                     <a href="">Help</a>
-                                </div>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -203,7 +303,7 @@
             <div class="container copyright">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>&copy; <a href="#">THE ONLINE SALON</a>@ All Right Reserved.</p>
+                        <p>&copy; <a href="#">THE ONLINE SALON </a>@ All Right Reserved.</p>
                     </div>
                     <div class="col-md-6">
                         <p>Designed By <a href="">TEAM JSP</a></p>

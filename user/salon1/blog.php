@@ -1,3 +1,8 @@
+
+<? php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -70,10 +75,10 @@
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Service</a>
                         <a href="price.html" class="nav-item nav-link">Price</a>
-                        <a href="team.html" class="nav-item nav-link active">Barber</a>
+                        <a href="team.html" class="nav-item nav-link">Barber</a>
                         <a href="portfolio.html" class="nav-item nav-link">Gallery</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu">
                                 <a href="blog.html" class="dropdown-item">Blog Page</a>
                                 <a href="single.html" class="dropdown-item">Single Page</a>
@@ -92,11 +97,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Barber</h2>
+                        <h2>Barber Blog</h2>
                     </div>
                     <div class="col-12">
                         <a href="">Home</a>
-                        <a href="">Barber</a>
+                        <a href="">Barber Blog</a>
                     </div>
                 </div>
             </div>
@@ -104,63 +109,151 @@
         <!-- Page Header End -->
 
 
-        <!-- Team Start -->
-        <div class="team">
+        <!-- Blog Start -->
+        <div class="blog">
             <div class="container">
                 <div class="section-header text-center">
-                    <p>Our Barber Team</p>
-                    <h2>Meet Our Hair Cut Expert Barber</h2>
+                    <p>Latest From Blog</p>
+                    <h2>Learn More from Latest Barber Blog</h2>
+                </div>
+                <div class="row blog-page">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-1.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Hair Cut</a>
+                                <i class="fa fa-calendar-alt"></i>
+                                <p>01-Jan-2045</p>
+                            </div>
+                            <div class="blog-text">
+                                <h2>Lorem ipsum dolor</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                </p>
+                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-2.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Beard Style</a>
+                                <i class="fa fa-calendar-alt"></i>
+                                <p>01-Jan-2045</p>
+                            </div>
+                            <div class="blog-text">
+                                <h2>Lorem ipsum dolor</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                </p>
+                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-3.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Color & Wash</a>
+                                <i class="fa fa-calendar-alt"></i>
+                                <p>01-Jan-2045</p>
+                            </div>
+                            <div class="blog-text">
+                                <h2>Lorem ipsum dolor</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                </p>
+                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-4.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Hair Cut</a>
+                                <i class="fa fa-calendar-alt"></i>
+                                <p>01-Jan-2045</p>
+                            </div>
+                            <div class="blog-text">
+                                <h2>Lorem ipsum dolor</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                </p>
+                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-5.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Beard Style</a>
+                                <i class="fa fa-calendar-alt"></i>
+                                <p>01-Jan-2045</p>
+                            </div>
+                            <div class="blog-text">
+                                <h2>Lorem ipsum dolor</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                </p>
+                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-6.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Color & Wash</a>
+                                <i class="fa fa-calendar-alt"></i>
+                                <p>01-Jan-2045</p>
+                            </div>
+                            <div class="blog-text">
+                                <h2>Lorem ipsum dolor</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                </p>
+                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-1.jpg" alt="Team Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Amit padar</h2>
-                                <p>Master Barber</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-2.jpg" alt="Team Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Divyesh jani</h2>
-                                <p>Hair Expert</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-3.jpg" alt="Team Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Ganesh kali</h2>
-                                <p>Beard Expert</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-4.jpg" alt="Team Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Joni kamil</h2>
-                                <p>Color Expert</p>
-                            </div>
-                        </div>
+                    <div class="col-12">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul> 
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Team End -->
-       
+        <!-- Blog End -->
+
+
         <!-- Footer Start -->
         <div class="footer">
             <div class="container">
@@ -185,7 +278,7 @@
                             <div class="col-md-6">
                                 <div class="footer-link">
                                     <h2>Quick Links</h2>
-                                    <a href="">HOME</a>
+                                    <a href="">Home</a>
                                     <a href="">Terms of use</a>
                                     <a href="../appointment.html">Appointment</a>
                                     <a href="">Help</a>

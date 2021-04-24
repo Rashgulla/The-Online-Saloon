@@ -4,7 +4,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Created By ZNS.Com @2020 All Rights Reserved By Tos.</span>
+            <span>Copyright &copy; Created & designe By ZNS.Com @2020 All Rights Reserved By Tos.</span>
           </div>
         </div>
       </footer>
