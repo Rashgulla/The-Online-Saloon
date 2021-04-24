@@ -56,7 +56,7 @@
 
         <ul class="nav flex-column bg-white mb-0">
             <li class="nav-item">
-                <a href="#" class="nav-link text-warning bg-dark">
+                <a href="../Home/user_logout.php" class="nav-link text-warning bg-dark">
                     <i class="fa fa-arrow-right mr-3 text-danger fa-fw"></i>
                     sign out
                 </a>
