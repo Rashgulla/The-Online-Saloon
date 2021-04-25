@@ -118,7 +118,7 @@ session_start();
                             <input type="password" class="form-control" id="cexampleInputPassword1" name="confirm_password">
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Create account</button>
+                        <button type="submit" class="btn btn-primary" name="sign_up">Create account</button>
                     </form>
                 </div>
                 <div class="modal-footer">

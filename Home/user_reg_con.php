@@ -1,5 +1,5 @@
 <?php
- 
+    
     include('connect.php');
 
     $email = $_POST['email'];
@@ -11,9 +11,11 @@
     {
         $sql = "INSERT INTO users(email,username,password) values('$email','$username','$password')";
         $conn->query($sql);
-        echo "<script> alert('account created.');
-        window.location.href='../user/user_home.php';
-        </script>";
+       /* echo "<script> alert('account created.');
+        window.location.href='../Home/index.php';
+        </script>";*/
+        header('location: ../user/user_home.php');
+        
     }
     else
     {

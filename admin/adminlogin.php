@@ -13,8 +13,8 @@ if (isset($_POST['login'])) {
 
 
     $sql = "SELECT * FROM admins WHERE email='$email' AND password='$password'";
-    $result=$conn->query($sql);
-    $final=$result->fetch_assoc();
+    $results = $conn->query($sql);
+    $final = $results->fetch_assoc();
 
 
 
@@ -37,19 +37,42 @@ if (isset($_POST['login'])) {
 
     <div class="col-sm-4">
         <h3>Admin Login</h3>
-        <form class="form-horizontal" action="adminlogin.php" method="POST">
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">Horizontal Form</h3>
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" name="password">
-            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form class="form-horizontal" action="adminlogin.php" method="POST">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 
-            <button type="submit" class="btn btn-primary" name="login">Login</button>
-        </form>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password" name="password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer">
+    
+                    <button type="submit" class="btn btn-info pull-right" name="login">Login</button>
+                </div>
+                <!-- /.box-footer -->
+            </form>
+        </div>
     </div>
 
     <div class="col-sm-4">
