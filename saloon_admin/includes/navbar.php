@@ -24,7 +24,7 @@
 
 <!-- Heading -->
 <div class="sidebar-heading">
-  Interface
+  Saloon-Admin
 </div>
 
 
@@ -38,9 +38,9 @@
 </li>
 
 <li class="nav-item">
-  <a class="nav-link" href="check_appointment.php">
+  <a class="nav-link" href="schedule.php">
     <i class="fas fa-fw fa-chart-area"></i>
-    <span>New appointment</span></a>
+    <span> Schedule appointment</span></a>
 </li>
 
 
