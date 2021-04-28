@@ -101,7 +101,7 @@ session_start();
                             <p>
                                YOU CAN CHOOSE OUR SERVICES AND BOOK APPOINTMENT.
                             </p>
-                            <a class="btn" href="../appointment.html">BOOK APPOINTMENT</a>
+                            <a class="btn" href="../appointment.php">BOOK APPOINTMENT</a>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 d-none d-md-block">

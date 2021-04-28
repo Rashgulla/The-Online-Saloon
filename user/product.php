@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>THE ONLINE SALOON:- PRODUCT</title>
 
     <!-- owl carousel css file cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -28,7 +28,7 @@ session_start();
 
 <div class="header-1">
 
-    <a href="#" class="logo"> <i class="fas fa-shopping-bag"></i>  Products </a>
+    <a href="#" class="logo"  img src="tgb/logo"  > <i class="fas fa-shopping-bag"></i>  THE ONLINE SALOON </a>
 
     <div class="form-container">
         <form action="">
@@ -46,10 +46,9 @@ session_start();
     <nav class="navbar">
         <ul>
             <li><a class="active" href="#home">home</a></li>
-            <li><a href="TheOnlineSaloon\saloon shop.html">shop</a></li>
+            <li><a href="TheOnlineSaloon\saloon shop.html">products</a></li>
         
-            <li><a href="#gallery">gallery</a></li>
-            <li><a href="#deal">deal</a></li>
+        
         </ul>
     </nav>
 
@@ -98,7 +97,7 @@ session_start();
 
 <section class="arrival" id="arrival">
 
-<h1 class="heading"> <span>new arrivals</span> </h1>
+<h1 class="heading"> <span>PRODUCTS</span> </h1>
 
 <div class="box-container">
 
@@ -119,11 +118,7 @@ session_start();
                 </div>
             </div>
         </div>
-        <div class="overlay">
-            <a href="wishlist" style="--i:1;" class="fas fa-heart"></a>
-            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
-            <a href="search" style="--i:3;" class="fas fa-search"></a>
-        </div>
+       
     </div>
 
 
@@ -144,11 +139,7 @@ session_start();
                 </div>
             </div>
         </div>
-        <div class="overlay">
-            <a href="#" style="--i:1;" class="fas fa-heart"></a>
-            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
-            <a href="#" style="--i:3;" class="fas fa-search"></a>
-        </div>
+       
     </div>
 
     <div class="box">
@@ -168,11 +159,7 @@ session_start();
                 </div>
             </div>
         </div>
-        <div class="overlay">
-            <a href="#" style="--i:1;" class="fas fa-heart"></a>
-            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
-            <a href="#" style="--i:3;" class="fas fa-search"></a>
-        </div>
+        
     </div>
 
     <div class="box">
@@ -192,11 +179,7 @@ session_start();
                 </div>
             </div>
         </div>
-        <div class="overlay">
-            <a href="#" style="--i:1;" class="fas fa-heart"></a>
-            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
-            <a href="#" style="--i:3;" class="fas fa-search"></a>
-        </div>
+       
     </div>
 
     <div class="box">
@@ -216,11 +199,7 @@ session_start();
                 </div>
             </div>
         </div>
-        <div class="overlay">
-            <a href="#" style="--i:1;" class="fas fa-heart"></a>
-            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
-            <a href="#" style="--i:3;" class="fas fa-search"></a>
-        </div>
+        
     </div>
 
     <div class="box">
@@ -240,343 +219,20 @@ session_start();
                 </div>
             </div>
         </div>
-        <div class="overlay">
-            <a href="#" style="--i:1;" class="fas fa-heart"></a>
-            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
-            <a href="#" style="--i:3;" class="fas fa-search"></a>
-        </div>
+        
     </div>
 
 </div>
+
+
 
 </section>
 
 <!-- arrival section ends -->
 
-<!-- featured section starts  -->
-
-<section class="feature" id="featured">
-
-<h1 class="heading"> <span> featured product </span> </h1>
-
-<div class="row">
-
-    <div class="image-container">
-
-        <div class="big-image">
-            <img src="tgb/b.oil.jpg" alt="">
-        </div>
-
-        <div class="small-image">
-            <img class="image-active" src="tgb/b.oil2.jpg" alt="">
-            <img src="tgb/b.oild.jpg" alt="">
-            <img src="tgb/b.oil2.jpg" alt="">
-            <img src="tgb/b.oil.jpg" alt="">
-        </div>
-
-    </div>
-
-    <div class="content">
-
-        <h3>Beard Growth Oil</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <span>(500+) reviews</span>
-        </div>
-        <p>Grow Your Beard with tgb Growth Oil</p>
-        <strong class="price">₹279 <span>₹350</span> </strong>
-        <a href="#"><button class="btn">buy now</button></a>
-
-    </div>
-
-</div>
 
 
 
-</section>
-
-<!-- featured section ends -->
-
-<!-- gallery section starts  -->
-
-<section class="gallery" id="gallery">
-
-<h1 class="heading"> <span> Product gallery </span> </h1>
-
-<ul class="controls">
-    <li class="btn button-active" data-filter="all">All</li>
-    <li class="btn" data-filter="face">Face</li>
-    <li class="btn" data-filter="beard">Beard</li>
-    <li class="btn" data-filter="hair">Hair</li>
-
-</ul>
-
-<div class="image-container">
-
-    <div class="box face">
-        <div class="image">
-            <img src="tgb/detanfw.jpeg" alt="">
-        </div>
-        <div class="info">
-            <h3>De-tan F/W</h3>
-            <div class="subInfo">
-                <strong class="price">₹250</strong>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="box face">
-        <div class="image">
-            <img src="tgb/neemfw.jpeg" alt="">
-        </div>
-        <div class="info">
-            <h3>Neem F/W</h3>
-            <div class="subInfo">
-                <strong class="price">₹250</strong>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="box face">
-        <div class="image">
-            <img src="tgb/antiacnefw.jpeg" alt="">
-        </div>
-        <div class="info">
-            <h3>Anti Acne F/W</h3>
-            <div class="subInfo">
-                <strong class="price">₹250</strong>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="box face">
-        <div class="image">
-            <img src="tgb/washfree.jpeg" alt="">
-        </div>
-        <div class="info">
-            <h3>Wash Free F/W</h3>
-            <div class="subInfo">
-                <strong class="price">₹350</strong>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="box face">
-        <div class="image">
-            <img src="tgb/charcolfw.jpeg" alt="">
-        </div>
-        <div class="info">
-            <h3>Charcol F/W</h3>
-            <div class="subInfo">
-                <strong class="price">250</strong>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="box beard">
-        <div class="image">
-            <img src="tgb/b.oil.jpg" alt="">
-        </div>
-        <div class="info">
-            <h3>Beard Growth oil</h3>
-            <div class="subInfo">
-                <strong class="price">₹350</strong>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-            </div>
-        </div>
-    </div>  
-
-     <div class="box beard">
-        <div class="image">
-            <img src="tgb/classicb.oil.jpeg" alt="">
-        </div>
-        <div class="info">
-            <h3>Classic Beard Oil</h3>
-            <div class="subInfo">
-                <strong class="price">₹450</strong>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-            </div>
-        </div>
-    </div>  
-
-    <div class="box hair">
-        <div class="image">
-            <img src="tgb/classicb.shampoo.jpeg" alt="">
-        </div>
-        <div class="info">
-            <h3>Classic Beard Shampoo</h3>
-            <div class="subInfo">
-                <strong class="price">₹350</strong>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-            </div>
-        </div>
-    </div>  
-
-
- <div class="box beard">
-        <div class="image">
-            <img src="tgb/beardwash.jpeg" alt="">
-        </div>
-        <div class="info">
-            <h3> Beard Wash</h3>
-            <div class="subInfo">
-                <strong class="price">₹250</strong>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-            </div>
-        </div>
-    </div>  
-
-
-    <div class="box hair">
-        <div class="image">
-            <img src="tgb/hairseram.jpeg" alt="">
-        </div>
-        <div class="info">
-            <h3>Hair Seram</h3>
-            <div class="subInfo">
-                <strong class="price">₹250</strong>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                </div>
-            </div>
-        </div>
-    </div>  
-
-    
-</div>
-
-</section>
-
-<!-- gallery section ends -->
-
-<!-- deal section starts  -->
-
-<section class="deal" id="deal">
-
-<h1 class="heading"> <span> Best Deal </span> </h1>
-
-<div class="box-container">
-
-    <div class="box">
-        <img src="tgb/Classicb.oil.jpeg" alt="">
-        <div class="content">
-            <h3>latest Product</h3>
-            <p>upto 25% off on first purchase</p>
-            <a href="#"><button class="btn">explore</button></a>
-        </div>
-    </div>
-
-    <div class="box">
-        <img src="tgb/washfree.jpeg" alt="">
-        <div class="content">
-            <h3>New Facewash</h3>
-            <p>upto 25% off on first purchase</p>
-            <a href="#"><button class="btn">explore</button></a>
-        </div>
-    </div>
-
-</div>
-
-<div class="icons-container">
-
-    <div class="icons">
-        <i class="fas fa-shipping-fast"></i>
-        <h3>fast delivery</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, molestiae?</p>
-    </div>
-
-    <div class="icons">
-        <i class="fas fa-user-clock"></i>
-        <h3>24 x 7 support</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, molestiae?</p>
-    </div>
-
-    <div class="icons">
-        <i class="fas fa-money-check-alt"></i>
-        <h3>easy payments</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, molestiae?</p>
-    </div>
-
-    <div class="icons">
-        <i class="fas fa-box"></i>
-        <h3>10 days replacements</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, molestiae?</p>
-    </div>
-
-</div>
-
-</section>
-
-<!-- deal section ends -->
-
-<!-- newsletter section ends -->
 
 <!-- footer section starts  -->
 
@@ -612,7 +268,7 @@ session_start();
 
     </div>
 
-<h1 class="credit"> created by ZNS.com <span></span> @2020 all rights reserved by Tos. </h1>
+<h1 class="credit"> created by ZNS.com <span></span> @2020 all rights reserved by TOS. </h1>
 
 </section>
 
