@@ -88,18 +88,27 @@ session_start();
     
 </body>
    
+<section class="footer">
 
-    
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/"></a>
+  </div>
+  <!-- Copyright -->
+</footer>
+</section>
 
 <!-- Optiona1 Javascript -->
 <!-- jquery first, then Popper.js, then Bootstrap JS -->
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/Popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-datepicker.js"></script>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/Popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-datepicker.js"></script> 
 
 <script>
-    $(document).ready(function() {
+    $(document)ready(function() {
         $("#dat").datepicker();
     })
 </script>
