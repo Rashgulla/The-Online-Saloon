@@ -41,6 +41,7 @@ session_start();
                 <div class="col-sm-7">
                     <div class="content">
                         <h1>The Online Saloon </h1>
+
                         <img src="../images/logo.jpeg" alt="TOS" width="228" height="228">
                         <p>LET'S MAKE AN APPOINTMENT FOR YOUR LIFE & STYLE</p>
                     </div>
@@ -65,19 +66,55 @@ session_start();
                             </div>
 
                             <h5>Which Services you prefere </h5>
-
-                            <div class="row form-row">
-
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Give us more details.."></textarea>
-                                </div>
-                            </div>
-                            <div class="row form-row">
-                                <button type="submit" name="appointment" class="btn btn-success btn-appointment" value="submit">
-                                    get appointment
-                                </button>
-                            </div>
-
+                           
+                            <div class="form-check">
+                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                          <label class="form-check-label" for="flexCheckDefault">
+                           Hair cut  
+                          </label>
+                          </div>
+                          <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                          <label class="form-check-label" for="flexCheckChecked">
+                           Beard Cut
+                           </label>
+                          </div>
+                          <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                          <label class="form-check-label" for="flexCheckChecked">
+                           Hair color
+                           </label>
+                          </div>
+                          <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                          <label class="form-check-label" for="flexCheckChecked">
+                           Beard color
+                           </label>
+                          </div>
+                          <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                          <label class="form-check-label" for="flexCheckChecked">
+                           Hair Wash
+                           </label>
+                          </div>
+                          <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                          <label class="form-check-label" for="flexCheckChecked">
+                           Beard Wash
+                           </label>
+                          </div>
+                          <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                          <label class="form-check-label" for="flexCheckChecked">
+                           Face Massage
+                           </label>
+                          </div>
+                          <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                          <label class="form-check-label" for="flexCheckChecked">
+                           Face Cleanning   
+                           </label>
+                          </div>
                         </div>
                     </div>
                 </div>
@@ -88,17 +125,7 @@ session_start();
     
 </body>
    
-<section class="footer">
 
-<footer class="bg-light text-center text-lg-start">
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2020 Copyright:
-    <a class="text-dark" href="https://mdbootstrap.com/"></a>
-  </div>
-  <!-- Copyright -->
-</footer>
-</section>
 
 <!-- Optiona1 Javascript -->
 <!-- jquery first, then Popper.js, then Bootstrap JS -->
