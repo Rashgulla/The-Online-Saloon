@@ -5,6 +5,23 @@ session_start();
 <html lang="en">
 
 <head>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">TheOnlineSaloon</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Saloon</a>
+      <a class="nav-item nav-link" href="#">Product</a>
+      <a class="nav-item nav-link disabled" href="#"></a>
+    </div>
+  </div>
+</nav>
+
     <!--Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -67,27 +84,12 @@ session_start();
             </div>
         </div>
     </div>
-
-
-
-    <div class="copyrights">
-        <div class="container">
-            <div class="footer-distributed">
-                <div class="footer-left">
-                    <p class="footer-links">
-                        <a href="#">Home</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">About</a>
-                        <a href="#">Contact</a>
-                    </p>
-                    <p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">The Online Saloon</p>
-                </div>
-            </div>
-        </div><!-- end container -->
-    </div><!-- end copyrights -->
-    </div>
-
+ 
+    
 </body>
+   
+
+    
 
 <!-- Optiona1 Javascript -->
 <!-- jquery first, then Popper.js, then Bootstrap JS -->
@@ -99,7 +101,6 @@ session_start();
 <script>
     $(document).ready(function() {
         $("#dat").datepicker();
-
     })
 </script>
 </body>
