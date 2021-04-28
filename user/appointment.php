@@ -5,6 +5,23 @@ session_start();
 <html lang="en">
 
 <head>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">TheOnlineSaloon</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Saloon</a>
+      <a class="nav-item nav-link" href="#">Product</a>
+      <a class="nav-item nav-link disabled" href="#"></a>
+    </div>
+  </div>
+</nav>
+
     <!--Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,6 +41,7 @@ session_start();
                 <div class="col-sm-7">
                     <div class="content">
                         <h1>The Online Saloon </h1>
+
                         <img src="../images/logo.jpeg" alt="TOS" width="228" height="228">
                         <p>LET'S MAKE AN APPOINTMENT FOR YOUR LIFE & STYLE</p>
                     </div>
@@ -48,58 +66,77 @@ session_start();
                             </div>
 
                             <h5>Which Services you prefere </h5>
-
-                            <div class="row form-row">
-
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Give us more details.."></textarea>
-                                </div>
-                            </div>
-                            <div class="row form-row">
-                                <button type="submit" name="appointment" class="btn btn-success btn-appointment" value="submit">
-                                    get appointment
-                                </button>
-                            </div>
-
+                           
+                            <div class="form-check">
+                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                          <label class="form-check-label" for="flexCheckDefault">
+                           Hair cut  
+                          </label>
+                          </div>
+                          <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                          <label class="form-check-label" for="flexCheckChecked">
+                           Beard Cut
+                           </label>
+                          </div>
+                          <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                          <label class="form-check-label" for="flexCheckChecked">
+                           Hair color
+                           </label>
+                          </div>
+                          <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                          <label class="form-check-label" for="flexCheckChecked">
+                           Beard color
+                           </label>
+                          </div>
+                          <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                          <label class="form-check-label" for="flexCheckChecked">
+                           Hair Wash
+                           </label>
+                          </div>
+                          <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                          <label class="form-check-label" for="flexCheckChecked">
+                           Beard Wash
+                           </label>
+                          </div>
+                          <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                          <label class="form-check-label" for="flexCheckChecked">
+                           Face Massage
+                           </label>
+                          </div>
+                          <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                          <label class="form-check-label" for="flexCheckChecked">
+                           Face Cleanning   
+                           </label>
+                          </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-    <div class="copyrights">
-        <div class="container">
-            <div class="footer-distributed">
-                <div class="footer-left">
-                    <p class="footer-links">
-                        <a href="#">Home</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">About</a>
-                        <a href="#">Contact</a>
-                    </p>
-                    <p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">The Online Saloon</p>
-                </div>
-            </div>
-        </div><!-- end container -->
-    </div><!-- end copyrights -->
-    </div>
-
+ 
+    
 </body>
+   
+
 
 <!-- Optiona1 Javascript -->
 <!-- jquery first, then Popper.js, then Bootstrap JS -->
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/Popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-datepicker.js"></script>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/Popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-datepicker.js"></script> 
 
 <script>
-    $(document).ready(function() {
+    $(document)ready(function() {
         $("#dat").datepicker();
-
     })
 </script>
 </body>
