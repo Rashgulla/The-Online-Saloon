@@ -17,6 +17,11 @@ include('includes/navbar.php');
 
         <div class="modal-body">
 
+        <div class="form-group">
+                <label> Saloon name </label>
+                <input type="text" name="Saloon name" class="form-control" placeholder="Enter Saloon name">
+            </div>
+
             <div class="form-group">
                 <label> Username </label>
                 <input type="text" name="username" class="form-control" placeholder="Enter Username">
@@ -51,7 +56,7 @@ include('includes/navbar.php');
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
   <div class="card-header py-3">
-    <h6 class="m-0 font-weight-bold text-primary">Admin Profile 
+    <h6 class="m-0 font-weight-bold text-primary"> Saloon Admin Profile 
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addadminprofile">
               Add Admin Profile 
             </button>
@@ -66,6 +71,7 @@ include('includes/navbar.php');
         <thead>
           <tr>
             <th> ID </th>
+            <th> Saloon Name </th>
             <th> Username </th>
             <th>Email </th>
             <th>Password</th>
@@ -77,8 +83,9 @@ include('includes/navbar.php');
      
           <tr>
             <td> 1 </td>
-            <td> Funda of WEb IT</td>
-            <td> funda@example.com</td>
+            <td> parth saloon </td>
+            <td> parth Patel </td>
+            <td> psaloon@example.com</td>
             <td> *** </td>
             <td>
                 <form action="" method="post">
