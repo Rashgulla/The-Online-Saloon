@@ -9,7 +9,7 @@
 
     if($password==$confirm_password)
     {
-        $sql = "INSERT INTO user_registration(email,username,password) values('$email','$username','$password')";
+        $sql = "INSERT INTO users(email,username,password) values('$email','$username','$password')";
         $conn->query($sql);
         echo "<script> alert('account created.');
         window.location.href='../user/user_home.php';

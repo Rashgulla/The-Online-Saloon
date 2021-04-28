@@ -34,11 +34,11 @@ include('adminpartials/head.php');
             <section class="content">
                 <!-- Small boxes (Stat box) -->
                 <div>
-                    <form role="form">
+                    <form role="form" action="producthandler.php" method="POST" enctype="multipart/form-data">
                         <div class="box-body">
                             <div class="form-group">
-                                <label for="product">Product Name</label>
-                                <input type="email" class="form-control" id="product" placeholder="Add new product" name="product">
+                                <label for="name">Product Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Add new product" name="name">
                             </div>
                             <div class="form-group">
                                 <label for="price">Price</label>
@@ -51,13 +51,13 @@ include('adminpartials/head.php');
                             </div>
                             <div class="form-group">
                                 <label for="description">Description</label>
-                                <textarea name="description" class="form-control" id="description" cols="30" rows="10"></textarea>
+                                <textarea name="description" class="form-control" id="description" cols="30" rows="10" placeholder="Enter description"></textarea>
                             </div>
                         </div>
                         <!-- /.box-body -->
 
                         <div class="box-footer">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary">Add Product</button>
                         </div>
                     </form>
                 </div>

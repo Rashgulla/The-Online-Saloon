@@ -9,7 +9,7 @@ if(isset($_POST['login'])){
     $password = $_POST['password'];
     
 
-    $sql = "SELECT * FROM user_registration WHERE email='$email' AND password='$password'";
+    $sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
     $result=$conn->query($sql);
     $final=$result->fetch_assoc();
 
