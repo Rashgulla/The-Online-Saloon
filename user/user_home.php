@@ -26,8 +26,11 @@ echo "<script>window.open('../Home/index.php','_self')</script>";
                 <img  loading="lazy" src="../images/profile2.jpg" alt="..." width="80" height="80"
                     class="mr-3 rounded-circle img-thumbnail shadow-sm">
                 <div class="media-body">
-                    <h4 class="m-0 text-warning">User</h4>
-                    <p class="font-weight-normal text-muted mb-0">Web developer</p>
+   
+                    <a href="userprofile.php" style="text-decoration: none; color:white;">
+                    <h3><?php echo $_SESSION['username']?></h3>
+                    </a>
+                    
                 </div>
             </div>
         </div>

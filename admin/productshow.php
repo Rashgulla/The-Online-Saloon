@@ -38,15 +38,15 @@ include('adminpartials/head.php');
 
                         <?php
                         include('../Home/connect.php');
-
+                        $sno=0;
                         $sql = "SELECT * FROM products";
 
                         $results = $conn->query($sql);
-                        while ($final = $results->fetch_assoc()) { ?>
-
+                        while ($final = $results->fetch_assoc()) {$sno+=1; ?>
+                            <h3><?php echo $sno.')';?>
                             <a href="proshow.php?pro_id=<?php echo $final['id'] ?>">
-                                <h3><?php echo $final['id'] ?>: <?php echo $final['name'] ?></h3><br>
-                            </a>
+                            <?php echo $final['name'] ?>: <?php echo $final['id'] ?><br>
+                            </a></h3>
 
                             <a href="proupdate.php?up_id=<?php echo $final['id'] ?>">
                                 <button type="button" class="btn btn-warning">Update</button>
