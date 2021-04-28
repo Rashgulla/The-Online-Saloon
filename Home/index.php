@@ -77,8 +77,9 @@ session_start();
                             <label for="exampleInputPassword1" class="form-label">Password</label>
                             <input type="password" class="form-control" name="password" id="exampleInputPassword1">
                         </div>
-
+                        
                         <button type="submit" class="btn btn-primary" name=login>Login</button>
+                        
                     </form>
                 </div>
                 <div class="modal-footer">
