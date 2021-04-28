@@ -20,9 +20,13 @@
         <li>
           <a href="addproduct.php">
             <i class="fa fa-th"></i> <span>Add Products</span>
-            <span class="pull-right-container">
-              <small class="label pull-right bg-green">new</small>
-            </span>
+
+          </a>
+        </li>
+        <li>
+          <a href="productshow.php">
+            <i class="fa fa-th"></i> <span>Manage Products</span>
+
           </a>
         </li>
 
