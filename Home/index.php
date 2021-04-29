@@ -134,7 +134,7 @@ session_start();
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -148,16 +148,10 @@ session_start();
                 <img src="../images/shop1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Products</h5>
-                    <p>Get our products online</p>
+                    <p>Order products online</p>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="../images/shop1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Register your shop</h5>
-                    <p>Register your shop to get online customers at your shop</p>
-                </div>
-            </div>
+
         </div>
         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -170,13 +164,7 @@ session_start();
     </div>
     <hr>
     
-    <div class="container">
-        <h3>Do you want to Register you salon to get online appointments??</h3>
-        <hr>
-        <button type="button" class="btn btn-success mr-4">Login</button>
-        <button type="button" class="btn btn-success ml-4">Sign Up</button>
-        
-    </div>
+
     
 
 

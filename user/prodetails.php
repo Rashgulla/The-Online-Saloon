@@ -51,7 +51,7 @@ session_start();
             <nav class="navbar">
                 <ul>
                     <li><a class="active" href="#home">home</a></li>
-                    <li><a href="TheOnlineSaloon\saloon shop.html">products</a></li>
+                    <li><a href="product.php">products</a></li>
 
 
                 </ul>
@@ -73,14 +73,14 @@ session_start();
 
 
     <!-- <div class="container">-->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <!--<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div>
                 <img src="tgb/slide1.jpg" class="d-block w-100" alt="..." style="height: 500px;">
             </div>
 
         </div>
-    </div>
+    </div>-->
     <!--</div>-->
     <!-- home section ends -->
 
@@ -88,34 +88,36 @@ session_start();
 
     <section class="arrival" id="arrival">
 
-        <h1 class="heading"> <span>PRODUCTS</span> </h1>
+
         <section class="content">
+            <div class="container-fluid d-flex justify-content-center">
+            <!-- Small boxes (Stat box) -->
+            <div class="row">
+                <div class="col-sm-9">
 
-                <!-- Small boxes (Stat box) -->
-                <div class="row">
-                    <div class="col-sm-9">
+                    <?php
+                    include('../Home/connect.php');
 
-                        <?php
-                        include('../Home/connect.php');
+                    $id = $_GET['see_id'];
+                    $sql = "SELECT * FROM products WHERE id='$id'";
 
-                        $id = $_GET['see_id'];
-                        $sql = "SELECT * FROM products WHERE id='$id'";
+                    $results = $conn->query($sql);
+                    $final = $results->fetch_assoc();
+                    ?>
 
-                        $results = $conn->query($sql);
-                        $final = $results->fetch_assoc();
-                        ?>
-
-                        <h3><label style="color: red; font-weight:bold;">NAME :</label><br> <?php echo $final['name'] ?></h3>
-                        <hr><br>
-                        <h3><label style="color: red; font-weight:bold;">PRICE :</label><br> <?php echo $final['price'] ?>Rs.</h3>
-                        <hr><br>
-                        <h3><label style="color: red; font-weight:bold;">DESCRIPTION :</label><br> <?php echo $final['description'] ?></h3>
-                        <hr><br>
-                        <img src="../admin/uploads/<?php echo $final['picture']?>" alt="<?php echo $final['picture'] ?>" style="height: 250px; width: 250px;"><br>
-                        <button type="button" class="btn btn-success mt-3" style="font-size:18px;">Buy Product</button>
-                    </div>
+                    <img src="../admin/uploads/<?php echo $final['picture'] ?>" alt="<?php echo $final['picture'] ?>" style="height: 250px; width: 250px;"><br>
+                    <h3><label class="mt-4" style="color: red; font-weight:bold;">NAME :</label><br> <?php echo $final['name'] ?></h3>
+                    <hr><br>
+                    <h3><label class="mt-4" style="color: red; font-weight:bold;">PRICE :</label><br> <?php echo $final['price'] ?>Rs.</h3>
+                    <hr><br>
+                    <h3><label class="mt-4" style="color: red; font-weight:bold;">DESCRIPTION :</label><br> <?php echo $final['description'] ?></h3>
+                    <hr><br>
+                   
+                    <button type="button" class="btn btn-success mt-3" style="font-size:18px;">Buy Product</button>
                 </div>
-            </section>
+            </div>
+            </div>
+        </section>
         </div>
 
 
