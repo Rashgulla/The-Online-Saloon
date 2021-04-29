@@ -72,15 +72,15 @@ session_start();
     <!-- home section starts  -->
 
 
-   <!-- <div class="container">-->
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div>
-                    <img src="tgb/slide1.jpg" class="d-block w-100" alt="..." style="height: 500px;">
-                </div>
-
+    <!-- <div class="container">-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div>
+                <img src="tgb/slide1.jpg" class="d-block w-100" alt="..." style="height: 500px;">
             </div>
+
         </div>
+    </div>
     <!--</div>-->
     <!-- home section ends -->
 
@@ -89,72 +89,36 @@ session_start();
     <section class="arrival" id="arrival">
 
         <h1 class="heading"> <span>PRODUCTS</span> </h1>
-        <?php
-        include('../Home/connect.php');
-        $sql = "SELECT * FROM products";
-        $results = $conn->query($sql);
-        while ($final = $results->fetch_assoc()) { ?>
-            <div class="container">
-                <div class="row">
+        <div class="container">
+            <div class="row">
+                <?php
+                include('../Home/connect.php');
+                $sql = "SELECT * FROM products";
+                $results = $conn->query($sql);
+
+                while ($final = $results->fetch_assoc()) { ?>
+
                     <div class="col-sm-3 mt-4">
                         <div class="card" style="width: 18rem;">
-                            <img src="../admin/uploads/<?php $final['picture'] ?>" class="card-img-top" alt="No file">
+                            <img src="../admin/uploads/<?php echo $final['picture'] ?>" class="card-img-top" alt="No file">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $final['name'] ?></h5>
-                                <p class="card-text"><?php echo $final['price'] ?></p>
-                                <a href="#" class="btn btn-danger">Buy product</a>
+                                <h2 class="card-title" style="font-weight:bold;"><?php echo $final['name'] ?></h2>
+                                <h4 class="card-text" style="font-weight:bold;color: red;"><?php echo 'Rs.' . $final['price'] . ' Only' ?></h4>
+                                <a href="prodetails.php?see_id=<?php echo $final['id']?>">
+                                    <button type="button" class="btn btn-warning">See Details</button>
+                                </a>
+
                             </div>
                         </div>
                     </div>
 
                 <?php
-            }
+                }
                 ?>
-                </div>
             </div>
+        </div>
 
-            <!-- <div class="box-container">
-                    <div class="col-sm-3">
-                        <div class="box">
-                            <div class="image">
-                                <img src="tgb/charcolfacescrub.jpg" alt="">
-                            </div>
-                            <div class="info">
 
-                                <h3>Charcol Face Scrub</h3>
-                                <div class="subInfo">
-                                    <strong class="price"> ₹149/- </strong>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
-
-            <!-- <div class="col-sm-3">
-                <div class="box">
-                    <div class="image">
-                        <img src="tgb/charcolfacescrub.jpg" alt="">
-                    </div>
-                    <div class="info">
-                        <h3>Charcol Face Scrub</h3>
-                        <div class="subInfo">
-                            <strong class="price"> ₹149/-  </strong>
-                        </div>
-                    </div>
-                </div>
-            </div>            
-            <div class="col-sm-3">
-                <div class="box">
-                    <div class="image">
-                        <img src="tgb/charcolfacescrub.jpg" alt="">
-                    </div>
-                    <div class="info">
-                        <h3>Charcol Face Scrub</h3>
-                        <div class="subInfo">
-                            <strong class="price"> ₹149/-  </strong>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
 
 
 
