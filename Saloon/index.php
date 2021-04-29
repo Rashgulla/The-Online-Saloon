@@ -108,6 +108,18 @@ session_start();
                             <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
                             <input type="password" class="form-control" id="cexampleInputPassword1" name="confirm_password">
                         </div>
+                        <div class="mb-3">
+                            <label for="exampleInputMobile" class="form-label">Mobile No.</label>
+                            <input type="number" class="form-control" id="exampleInputMobile" name="mobile_no">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPicture" class="form-label">Saloon Picture</label>
+                            <input type="file" class="form-control" id="exampleInputPicture" name="picture">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputAddress" class="form-label">Address</label>
+                            <textarea name="address" id="exampleInputAddress" class="form-control" cols="30" rows="10"></textarea>
+                        </div>
 
                         <button type="submit" class="btn btn-primary" name="sign_up">Create account</button>
                     </form>
@@ -126,20 +138,20 @@ session_start();
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner">
+        <div  class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../images/shop1.jpg" class="d-block w-100" alt="...">
+                <img src="../images/SI1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>SALOON </h5>
-                    <p>WEL-COME TO SALOON LOGIN </p>
+                    <h5 style="font-size: 100px; color:ORANGE; text-decoration:bold;" > SALOON </h5>
+                    <p style="font-size: 50px; color:green; text-decoration:underline; " > WEL-COME TO SALOON LOGIN </p>
                 </div>
             </div>
            
             <div class="carousel-item">
-                <img src="../images/shop1.jpg" class="d-block w-100" alt="...">
+                <img src="../images/SI2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Register your shop</h5>
-                    <p>Register your shop to get online customers at your shop</p>
+                    <h5 style="font-size: 100px; color:Yellow">Register your shop</h5>
+                    <p style="font-size: 50px; color:RED; text-decoration:underline;" >Register your shop to get online customers at your shop</p>
                 </div>
             </div>
         </div>
@@ -154,13 +166,7 @@ session_start();
     </div>
     <hr>
     
-    <div class="container">
-        <h3>Do you want to Register you salon to get online appointments??</h3>
-        <hr>
-        <button type="button" class="btn btn-success mr-4">Login</button>
-        <button type="button" class="btn btn-success ml-4">Sign Up</button>
-        
-    </div>
+    
     
 
 
