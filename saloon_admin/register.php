@@ -18,18 +18,15 @@ include('includes/navbar.php');
         <div class="modal-body">
 
         <div class="form-group">
-                <label> Saloon name </label>
-                <input type="text" name="Saloon name" class="form-control" placeholder="Enter Saloon name">
+                <label> E-Mail</label>
+                <input type="text" name="email" class="form-control" placeholder="Enter email address">
             </div>
 
             <div class="form-group">
                 <label> Username </label>
                 <input type="text" name="username" class="form-control" placeholder="Enter Username">
             </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" name="email" class="form-control" placeholder="Enter Email">
-            </div>
+           
             <div class="form-group">
                 <label>Password</label>
                 <input type="password" name="password" class="form-control" placeholder="Enter Password">
@@ -38,16 +35,23 @@ include('includes/navbar.php');
                 <label>Confirm Password</label>
                 <input type="password" name="confirmpassword" class="form-control" placeholder="Confirm Password">
             </div>
+            
+            <div class="form-group">
+                <label>Mobile No.  </label>
+                <input type="number" name="Mobile No." class="form-control" placeholder="Enter Mobile No.">
+            </div>
+
+            <div class="form-group">
+                <label> Saloon picture </label>
+                <input type="file" name="picture" class="form-control" placeholder="Chosee Picture">
+            </div>
+
             <div class="form-group">
                 <label> Address </label>
                 <input type="text" name="Address" class="form-control" placeholder="Enter Address">
             </div>
-            <div class="form-group">
-                <label> Username </label>
-                <input type="text" name="Mobile No." class="form-control" placeholder="Enter Mobile No.">
-            </div>
         </div>
-
+             
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="submit" name="registerbtn" class="btn btn-primary">Save</button>
@@ -78,12 +82,13 @@ include('includes/navbar.php');
         <thead>
           <tr>
             <th> ID </th>
-            <th> Saloon Name </th>
-            <th> Username </th>
             <th>Email </th>
+            <th>Username</th>
             <th>Password</th>
-            <th>Address</th>
+            <th>Conform Password</th>
             <th>Mobile No.</th>
+            <th>Saloon Name</th>
+            <th>Address </th>
             <th>EDIT </th>
             
           </tr>
@@ -92,12 +97,14 @@ include('includes/navbar.php');
      
           <tr>
             <td> 1 </td>
-            <td> parth saloon </td>
+            <td> psaloon@example.com </td>
             <td> parth Patel </td>
-            <td> psaloon@example.com</td>
-            <td> *** </td>
+            <td>abc123 </td>
+            <td>******</td>
+            <td> +91 9898989898 </td>
+            <td> Patel Saloon </td>
             <td> Xyz,area,ahmedabad </td>
-            <td> +91 9898989898  </td>
+            
           
             <td>
                 <form action="" method="post">

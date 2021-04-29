@@ -19,7 +19,7 @@
   <?php
 
 
-$connection = mysqli_connect("localhost","root","","adminpanel");
+$connection = mysqli_connect("localhost","root","","saloon_admin");
 
 if(isset($_POST['registerbtn']))
 {
