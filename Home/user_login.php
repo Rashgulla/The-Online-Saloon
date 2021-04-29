@@ -28,7 +28,7 @@ if(isset($_POST['login'])){
         echo "<script> alert('Invalid credentials');
         window.location.href='../Home/index.php';
         </script>";
-        echo "invalid";
+        
     }
 }
 
