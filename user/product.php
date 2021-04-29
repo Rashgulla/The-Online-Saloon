@@ -19,6 +19,9 @@ session_start();
     <link rel="stylesheet" href="../css/pstyle.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="user_home.css">
 </head>
 
 <body>
@@ -69,30 +72,16 @@ session_start();
     <!-- home section starts  -->
 
 
+   <!-- <div class="container">-->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div>
+                    <img src="tgb/slide1.jpg" class="d-block w-100" alt="..." style="height: 500px;">
+                </div>
 
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="tgb/slide1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="tgb/slide2.jpg
-      " class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="tgb/slide1.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
+    <!--</div>-->
     <!-- home section ends -->
 
     <!-- arrival section starts  -->
@@ -100,24 +89,47 @@ session_start();
     <section class="arrival" id="arrival">
 
         <h1 class="heading"> <span>PRODUCTS</span> </h1>
-    <div class="row">
-        <div class="box-container">
-            <div class="col-sm-3">
-                <div class="box">
-                    <div class="image">
-                        <img src="tgb/charcolfacescrub.jpg" alt="">
-                    </div>
-                    <div class="info">
-                        
-                        <h3>Charcol Face Scrub</h3>
-                        <div class="subInfo">
-                            <strong class="price"> ₹149/-  </strong>
+        <?php
+        include('../Home/connect.php');
+        $sql = "SELECT * FROM products";
+        $results = $conn->query($sql);
+        while ($final = $results->fetch_assoc()) { ?>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 mt-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../admin/uploads/<?php $final['picture'] ?>" class="card-img-top" alt="No file">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $final['name'] ?></h5>
+                                <p class="card-text"><?php echo $final['price'] ?></p>
+                                <a href="#" class="btn btn-danger">Buy product</a>
+                            </div>
                         </div>
                     </div>
+
+                <?php
+            }
+                ?>
                 </div>
             </div>
 
-            <div class="col-sm-3">
+            <!-- <div class="box-container">
+                    <div class="col-sm-3">
+                        <div class="box">
+                            <div class="image">
+                                <img src="tgb/charcolfacescrub.jpg" alt="">
+                            </div>
+                            <div class="info">
+
+                                <h3>Charcol Face Scrub</h3>
+                                <div class="subInfo">
+                                    <strong class="price"> ₹149/- </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+
+            <!-- <div class="col-sm-3">
                 <div class="box">
                     <div class="image">
                         <img src="tgb/charcolfacescrub.jpg" alt="">
@@ -142,11 +154,11 @@ session_start();
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> -->
 
-        
-    </div>
+
+
+
 
 
 
@@ -168,6 +180,10 @@ session_start();
     <script src="js/main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="user_home.js"></script>
 
 </body>
 
