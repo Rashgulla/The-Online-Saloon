@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['email'])) {
-
+    include('../Home/connect.php');
     echo "<script>window.open('../Home/index.php','_self')</script>";
 }
 ?>
@@ -127,10 +127,32 @@ if (!isset($_SESSION['email'])) {
 
         <div class="container mt-3" style="text-align: center;">
 
-            <h3>Username : <?php echo $_SESSION['username'] ?></h3><br>
-            <hr>
-            <h3>Email : <?php echo $_SESSION['email']; ?></h3><br>
-            <hr>
+        <?php
+            //global $conn;
+            include('../Home/connect.php');
+            $email=$_SESSION['email'];
+            $sql="SELECT * FROM users WHERE email='$email'";
+            
+            $results=mysqli_query($conn,$sql);
+            
+            if($results){
+                $rowcount=mysqli_num_rows($results);
+                if($rowcount>0){
+                    while($row=mysqli_fetch_array($results)){
+                        $mail=$row['email'];
+                        $name=$row['username'];
+                        $phone=$row['mobile_no'];
+                        $add=$row['address'];
+                        echo "<h3><label>Mail</label> : $mail</h3><hr>";
+                        echo "<h3><label>Username</label> : $name</h3><hr>";
+                        echo "<h3><label>Phone No</label> : $phone</h3><hr>";
+                        echo "<h3><label>Address</label> : $add</h3><hr>";
+                        
+                    }
+                }
+            }
+
+        ?>
 
             
   

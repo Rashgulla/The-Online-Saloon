@@ -57,7 +57,7 @@ session_start();
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="user_login.php" method="post">
+                    <form action="saloon_login.php" method="post">
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
                             <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -90,14 +90,14 @@ session_start();
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="user_reg_con.php" method="post">
+                    <form action="saloon_reg_con.php" method="POST" enctype="multipart/form-data">
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputUsername" class="form-label">Username</label>
+                            <label for="exampleInputUsername" class="form-label">Saloon Name</label>
                             <input type="text" class="form-control" id="exampleInputUsername" name="username">
                         </div>
                         <div class="mb-3">
@@ -114,7 +114,7 @@ session_start();
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPicture" class="form-label">Saloon Picture</label>
-                            <input type="file" class="form-control" id="exampleInputPicture" name="picture">
+                            <input type="file" class="form-control" id="exampleInputPicture" name="pic">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputAddress" class="form-label">Address</label>
