@@ -118,6 +118,14 @@ session_start();
                             <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
                             <input type="password" class="form-control" id="cexampleInputPassword1" name="confirm_password">
                         </div>
+                        <div class="mb-3">
+                            <label for="exampleInputMobile" class="form-label">Mobile No.</label>
+                            <input type="number" class="form-control" id="exampleInputMobile" name="mobile_no">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputAddress" class="form-label">Address</label>
+                            <textarea name="address" id="exampleInputAddress" class="form-control" cols="30" rows="10"></textarea>
+                        </div>
 
                         <button type="submit" class="btn btn-primary" name="sign_up">Create account</button>
                     </form>
