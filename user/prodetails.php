@@ -37,8 +37,7 @@ session_start();
 
             <div class="form-container">
                 <form action="">
-                    <input type="search" placeholder="search products" id="search" value="" />
-                    <label for="search" class="fas fa-search"></label>
+    
                 </form>
             </div>
 
@@ -58,9 +57,8 @@ session_start();
             </nav>
 
             <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-user"></a>
+\
+                <a href="userprofile.php" class="fas fa-user"></a>
             </div>
 
         </div>
@@ -105,7 +103,7 @@ session_start();
                     $final = $results->fetch_assoc();
                     ?>
 
-                    <img src="../admin/uploads/<?php echo $final['picture'] ?>" alt="<?php echo $final['picture'] ?>" style="height: 250px; width: 250px;"><br>
+                    <img src="../admin/uploads/<?php echo $final['picture'] ?>" class="mt-4" alt="<?php echo $final['picture'] ?>" style="height: 250px; width: 250px;"><br>
                     <h3><label class="mt-4" style="color: red; font-weight:bold;">NAME :</label><br> <?php echo $final['name'] ?></h3>
                     <hr><br>
                     <h3><label class="mt-4" style="color: red; font-weight:bold;">PRICE :</label><br> <?php echo $final['price'] ?>Rs.</h3>

@@ -82,38 +82,12 @@ if (!isset($_SESSION['email'])) {
         <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Menu</small></button>
 
         <!--slider-->
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../images/shop1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Appointment</h5>
-                        <p>Now book your appointment by sitting there.</p>
-                        <button class="btn btn-success">Get Appointment</button>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="../images/shop2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Products</h5>
-                        <p>Get our products online</p>
-                        <button class="btn btn-danger">Products</button>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="../images/shop3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Register your shop</h5>
-                        <p>Register your shop to get online customers at your shop</p>
-                        <button class="btn btn-light">Register shop</button>
-                    </div>
-                </div>
+
+            <div class="container">
+                <img src="../images/p1.jpg" alt="No File">
             </div>
+
+
             <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>

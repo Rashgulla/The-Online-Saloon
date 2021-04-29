@@ -37,8 +37,7 @@ session_start();
 
             <div class="form-container">
                 <form action="">
-                    <input type="search" placeholder="search products" id="search" value="" />
-                    <label for="search" class="fas fa-search"></label>
+
                 </form>
             </div>
 
@@ -50,7 +49,7 @@ session_start();
 
             <nav class="navbar">
                 <ul>
-                    <li><a class="active" href="#home">home</a></li>
+                    <li><a class="active" href="user_home.php">home</a></li>
                     <li><a href="TheOnlineSaloon\saloon shop.html">products</a></li>
 
 
@@ -58,9 +57,8 @@ session_start();
             </nav>
 
             <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-user"></a>
+
+                <a href="userprofile.php" class="fas fa-user"></a>
             </div>
 
         </div>
@@ -101,7 +99,7 @@ session_start();
                     <div class="col-sm-3 mt-4">
                         <div class="card" style="width: 18rem;">
                             <img src="../admin/uploads/<?php echo $final['picture'] ?>" class="card-img-top" alt="No file">
-                            <div class="card-body">
+                            <div class="card-body" style="background-color:lightseagreen;">
                                 <h2 class="card-title" style="font-weight:bold;"><?php echo $final['name'] ?></h2>
                                 <h4 class="card-text" style="font-weight:bold;color: red;"><?php echo 'Rs.' . $final['price'] . ' Only' ?></h4>
                                 <a href="prodetails.php?see_id=<?php echo $final['id']?>">
