@@ -111,7 +111,9 @@ session_start();
                         <hr><br>
                         <h3><label class="mt-4" style="color: red; font-weight:bold;">Address :</label><?php echo $final['address']?><br> </h3>
                         <hr><br>
+                        <a href="appointment.php">
                         <button type="button" class="btn btn-success" style="font-size: 13px;">Get Appointment</button>
+                        </a>
                     </div>
                     <?php
                     }
