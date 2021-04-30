@@ -1,5 +1,7 @@
 <?php
 
+use function PHPSTORM_META\elementType;
+
 session_start();
 include('includes/header.php');
 include('includes/navbar.php');
@@ -16,7 +18,7 @@ include('includes/navbar.php');
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form">
+            <form role="form" method="POST">
                 <div class="box-body">
                     <div class="form-group">
                         <label for="service">Service Name</label>
@@ -27,7 +29,7 @@ include('includes/navbar.php');
                         <input type="text" class="form-control" id="price" placeholder="Enter Price" name="price">
                     </div>
                     <div class="form-group">
-                        <label for="price">Price</label>
+                        <label for="description">Description</label>
                         <textarea name="description" class="form-control" placeholder="Enter Desciption" id="description" cols="30" rows="10"></textarea>
                     </div>
 
@@ -35,7 +37,7 @@ include('includes/navbar.php');
                 <!-- /.box-body -->
 
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Add service</button>
+                    <button type="submit" class="btn btn-primary" name="add">Add service</button>
                 </div>
             </form>
         </div>
@@ -48,6 +50,25 @@ include('includes/navbar.php');
 
 
 <?php
-include('includes/scripts.php');
+//include('includes/scripts.php');
+include('../Home/connect.php');
+if (isset($_POST['add'])) {
+
+
+    $saloon_id = $_SESSION['id'];
+    $service = $_POST['service'];
+    $price = $_POST['price'];
+    $desc = $_POST['description'];
+
+    $sql="INSERT INTO services(saloon_id,service,price,description) values('$saloon_id','$service','$price','$desc')";
+    $results=mysqli_query($conn,$sql);
+    
+    if($results){
+        echo "service added";
+    }
+    else{
+        echo "Not added";
+    }
+}
 
 ?>
