@@ -19,7 +19,8 @@ include('includes/navbar.php');
                         <?php
                         include('../Home/connect.php');
                         $sno=0;
-                        $sql = "SELECT * FROM services";
+                        $id=$_SESSION['id'];
+                        $sql = "SELECT * FROM services WHERE saloon_id='$id'";
 
                         $results = $conn->query($sql);
                         while ($final = $results->fetch_assoc()) {$sno+=1; ?>

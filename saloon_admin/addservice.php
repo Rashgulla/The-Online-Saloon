@@ -37,7 +37,9 @@ include('includes/navbar.php');
                 <!-- /.box-body -->
 
                 <div class="box-footer">
+                <a href="appointment.php">
                     <button type="submit" class="btn btn-primary" name="add">Add service</button>
+                </a>
                 </div>
             </form>
         </div>

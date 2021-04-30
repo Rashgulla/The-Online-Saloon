@@ -23,12 +23,11 @@ include('includes/navbar.php');
                 $newid = $_GET['up_id'];
 
                 include('../Home/connect.php');
-                $sql = "SELECT * FROM products WHERE sid='$newid'";
+                $sql = "SELECT * FROM services WHERE sid='$newid'";
 
                 $results = $conn->query($sql);
                 $final = $results->fetch_assoc();
                 ?>
-
 
                 <div class="box-body">
                     <div class="form-group">
