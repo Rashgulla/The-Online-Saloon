@@ -17,13 +17,13 @@
     {
         $sql = "INSERT INTO saloon(email,username,password,mobile_no,picture,address) values('$email','$username','$password','$mobile','$cimage','$address')";
         if (mysqli_query($conn,$sql)) {
-            header('location: ../saloon_admin/index.php');
+            header('location: index.php');
         } 
         
     }
     else
     {
         echo "<script> alert('password did not match.');
-        window.location.href='saloon_reg_con.php';
+        window.location.href='index.php';
         </script>";
     }

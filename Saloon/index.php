@@ -91,32 +91,32 @@ session_start();
                     <form action="saloon_reg_con.php" method="POST" enctype="multipart/form-data">
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" required>
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputUsername" class="form-label">Saloon Name</label>
-                            <input type="text" class="form-control" id="exampleInputUsername" name="username">
+                            <input type="text" class="form-control" id="exampleInputUsername" name="username" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="password" required>
                         </div>
                         <div class="mb-3">
                             <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="cexampleInputPassword1" name="confirm_password">
+                            <input type="password" class="form-control" id="cexampleInputPassword1" name="confirm_password" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputMobile" class="form-label">Mobile No.</label>
-                            <input type="number" class="form-control" id="exampleInputMobile" name="mobile_no">
+                            <input type="number" class="form-control" id="exampleInputMobile" name="mobile_no" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPicture" class="form-label">Saloon Picture</label>
-                            <input type="file" class="form-control" id="exampleInputPicture" name="pic">
+                            <input type="file" class="form-control" id="exampleInputPicture" name="pic" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputAddress" class="form-label">Address</label>
-                            <textarea name="address" id="exampleInputAddress" class="form-control" cols="30" rows="4"></textarea>
+                            <textarea name="address" id="exampleInputAddress" class="form-control" cols="30" rows="4" required></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary" name="sign_up">Create account</button>

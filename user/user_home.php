@@ -147,7 +147,7 @@ if (!isset($_SESSION['email'])) {
 
                     <div class="col-sm-4 mt-4">
                         <div class="card" style="width: 18rem;">
-                            <img src="../saloon_admin/uploads/<?php echo $final['picture'] ?>" class="card-img-top" alt="No file">
+                            <img src="../saloon_admin/uploads/<?php echo $final['pic'] ?>" class="card-img-top" alt="No file">
                             <div class="card-body" style="background-color:lightseagreen;">
                                 <h2 class="card-title" style="font-weight:bold;"><?php echo $final['username'] ?></h2>
                                 
