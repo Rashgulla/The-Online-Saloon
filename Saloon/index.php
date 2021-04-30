@@ -12,7 +12,7 @@ session_start();
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>Tos||Saloon</title>
+    <title>The online saloon || Saloon</title>
 </head>
 
 <body>
@@ -31,10 +31,7 @@ session_start();
                 <li class="nav-item">
                     <a class="nav-link" href="about.php">About Us</a>
                 </li>
-               
-                <li class="nav-item">
-                    <a class="nav-link" href="../contact.php">Contact Us</a>
-                </li>
+              
 
             </ul>
 
@@ -118,7 +115,7 @@ session_start();
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputAddress" class="form-label">Address</label>
-                            <textarea name="address" id="exampleInputAddress" class="form-control" cols="30" rows="10"></textarea>
+                            <textarea name="address" id="exampleInputAddress" class="form-control" cols="30" rows="4"></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary" name="sign_up">Create account</button>
@@ -140,29 +137,14 @@ session_start();
         </ol>
         <div  class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../images/SI1.jpg" class="d-block w-100" alt="...">
+                <img src="../images/bg2.jpg" class="d-block w-100"  style="height: 755px;" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 style="font-size: 100px; color:ORANGE; text-decoration:bold;" > SALOON </h5>
-                    <p style="font-size: 50px; color:green; text-decoration:underline; " > WEL-COME TO SALOON LOGIN </p>
+                    <h5 style="font-size: 70px; color:ORANGE; text-decoration:bold;" >Wel-Come to Saloon </h5>
+                    <p style="font-size: 40px; color:yellow; text-decoration:underline;"> Login or Register your shop to get online customers at your shop  </p>
                 </div>
             </div>
+        <div>   
            
-            <div class="carousel-item">
-                <img src="../images/SI2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 style="font-size: 100px; color:Yellow">Register your shop</h5>
-                    <p style="font-size: 50px; color:RED; text-decoration:underline;" >Register your shop to get online customers at your shop</p>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
     <hr>
     
