@@ -18,7 +18,7 @@ if(isset($_POST['login'])){
 
     if($email==$final['email'] AND $password==$final['password'])
     {
-        
+        $_SESSION['id'] = $final['id'];
         $_SESSION['email'] = $final['email'];
  
         header('location: ../saloon_admin/index.php');
