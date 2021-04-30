@@ -12,13 +12,13 @@ session_start();
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>The Online Salon</title>
+    <title>The Online Salon || Admin</title>
 </head>
 
 <body>
     <!--navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">The Online Salon</a>
+        <a class="navbar-brand" href="#">The Online Salon : Admin</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -78,7 +78,7 @@ session_start();
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../images/bg-img3.jpg" class="d-block w-100" alt="...">
+                <img src="../images/bg1.jpg" class="d-block w-100" alt="..." style="height: 750px;"">
                 <div class="carousel-caption d-none d-md-block">
 
                 </div>
