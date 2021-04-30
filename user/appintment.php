@@ -2,12 +2,15 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Te Online saloon || Appointment Booking</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>The Online saloon || Appointment Booking</title>
   <link rel="stylesheet" href="appointment.css">
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+ 
 </head>
 
 <body>
@@ -16,7 +19,7 @@
   <div class="container">
     <div class="container-time">
       <h2 class="heading">The Online Saloon</h2>
-      <h3 class="heading-days">Book Your Appointment</h3>
+      <h3 class="heading-days">Happy Saloon</h3>
       <p>Monday-Sunday </p>
       <p>11am - 10pm (Any style any time)</p>
 
@@ -31,57 +34,56 @@
 
     <div class="container-form">
       <form action="#">
-        <h2 class="heading heading-yellow">Booking Online</h2>
-
+       <h2>Book your appointment now</h2>
 
         <div class="form-field">
           <p>Your Name</p>
-          <input type="text" placeholder="Your Name">
+          <input class="font-weight-bolder" type="text" placeholder="Your Name">
         </div>
         <div class="form-field">
+
           <p>Your email</p>
-          <input type="email" placeholder="Your email">
+          <input class="font-weight-bolder" type="email" placeholder="Your email">
         </div>
         <div class="form-field">
           <p>Your Mobile no.</p>
-          <input type="number" placeholder="Your Mobile no.">
+          <input class="font-weight-bolder" type="number" placeholder="Your Mobile no.">
         </div>
         <div class="form-field">
           <p>Date</p>
-          <input type="date">
+          <input class="font-weight-bolder" type="date">
         </div>
         <div class="form-field">
           <p>Time</p>
-          <input type="time">
+          <input class="font-weight-bolder" type="time">
         </div>
-        <br/>
+        <br />
 
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="button-group">
-                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox" />&nbsp;Hair cut</a></li>
-                  <li><a href="#" class="small" data-value="option2" tabIndex="-1"><input type="checkbox" />&nbsp;Hair Wash</a></li>
-                  <li><a href="#" class="small" data-value="option3" tabIndex="-1"><input type="checkbox" />&nbsp;Hair color</a></li>
-                  <li><a href="#" class="small" data-value="option4" tabIndex="-1"><input type="checkbox" />&nbsp;Beard set</a></li>
-                  <li><a href="#" class="small" data-value="option5" tabIndex="-1"><input type="checkbox" />&nbsp;Beard color</a></li>
-                  <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox" />&nbsp;Face massage</a></li>
-                  <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox" />&nbsp;Cleanning</a></li>
-                  <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox" />&nbsp;Faceail</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        <select class="custom-select">
+  <option selected>Select service</option>
+  <option value="1">Hair cut</option>
+  <option value="2">Hair color</option>
+  <option value="3">Hair wash</option>
+  <option value="3">Beard set</option>
+  <option value="3">Beard color</option>
+  <option value="3">massage</option>
+</select>
+
+
+
 
         <button class="btn">Submit</button>
       </form>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
   <script src="appointment.js"></script>
+
 </body>
 
 </html>
