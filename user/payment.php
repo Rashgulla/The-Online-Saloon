@@ -114,8 +114,8 @@ span.price {
 </head>
 <body>
 
-<h2>Responsive Checkout Form</h2>
-<p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other.</p>
+<h2>The Online Saloon || Product</h2>
+<p>Product Payment</p>
 <div class="row">
   <div class="col-75">
     <div class="container">
@@ -125,22 +125,22 @@ span.price {
           <div class="col-50">
             <h3>Billing Address</h3>
             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <input type="text" id="fname" name="firstname" placeholder="xyz a. Surname">
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
-            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <input type="text" id="email" name="email" placeholder="xyz@example.com">
             <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <input type="text" id="adr" name="address" placeholder="542/b abc,road, area">
             <label for="city"><i class="fa fa-institution"></i> City</label>
-            <input type="text" id="city" name="city" placeholder="New York">
+            <input type="text" id="city" name="city" placeholder="Ahmedabad">
 
             <div class="row">
               <div class="col-50">
                 <label for="state">State</label>
-                <input type="text" id="state" name="state" placeholder="NY">
+                <input type="text" id="state" name="state" placeholder="Gujarat">
               </div>
               <div class="col-50">
-                <label for="zip">Zip</label>
-                <input type="text" id="zip" name="zip" placeholder="10001">
+                <label for="zip">Pincode</label>
+                <input type="text" id="zip" name="zip" placeholder="383838">
               </div>
             </div>
           </div>
@@ -155,8 +155,8 @@ span.price {
               <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
             <label for="cname">Name on Card</label>
-            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-            <label for="ccnum">Credit card number</label>
+            <input type="text" id="cname" name="cardname" placeholder="xyz abc surname">
+            <label for="ccnum">Credit/Debit card number</label>
             <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
             <label for="expmonth">Exp Month</label>
             <input type="text" id="expmonth" name="expmonth" placeholder="September">
@@ -183,12 +183,12 @@ span.price {
   <div class="col-25">
     <div class="container">
       <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      <p><a href="#">Product 1</a> <span class="price">₹250</span></p>
+      <p><a href="#">Product 2</a> <span class="price">₹450</span></p>
+      <p><a href="#">Product 3</a> <span class="price">₹350</span></p>
+      <p><a href="#">Product 4</a> <span class="price">₹250</span></p>
       <hr>
-      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+      <p>Total <span class="price" style="color:black"><b>₹1300</b></span></p>
     </div>
   </div>
 </div>
