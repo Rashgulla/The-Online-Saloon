@@ -16,13 +16,13 @@
        /* echo "<script> alert('account created.');
         window.location.href='../Home/index.php';
         </script>";*/
-        header('location: ../user/user_home.php');
+        header('location: index.php');
         
     }
     else
     {
         echo "<script> alert('password did not match.');
-        window.location.href='../Home/index.php';
+        window.location.href='index.php';
         </script>";
     }
 

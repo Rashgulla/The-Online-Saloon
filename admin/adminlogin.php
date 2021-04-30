@@ -1,8 +1,9 @@
 <?php
+session_start();
 include('adminpartials/head.php');
 
 
-session_start();
+
 
 if (isset($_POST['login'])) {
 
