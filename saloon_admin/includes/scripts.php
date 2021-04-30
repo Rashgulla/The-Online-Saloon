@@ -16,6 +16,7 @@
   <script src="js/demo/chart-pie-demo.js"></script>
 
 
+<<<<<<< HEAD
   <?php
 
 
@@ -56,3 +57,5 @@ if(isset($_POST['registerbtn']))
 }
 
 ?>
+=======
+>>>>>>> b485c53f86ed465d714b1d865b353caf5307c0eb

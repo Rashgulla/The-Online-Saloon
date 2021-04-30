@@ -90,27 +90,31 @@ if (!isset($_SESSION['email'])) {
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../images/shop1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Appointment</h5>
-                        <p>Now book your appointment by sitting there.</p>
-                        <button class="btn btn-success">Get Appointment</button>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="../images/shop2.jpg" class="d-block w-100" alt="...">
+                    <img src="tgb/slide1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Products</h5>
                         <p>Get our products online</p>
-                        <button class="btn btn-danger">Products</button>
+                        <a href="product.php">
+                        <button class="btn btn-success">Get Product</button>
+                        </a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../images/shop3.jpg" class="d-block w-100" alt="...">
+                    <img src="../images/SI1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Register your shop</h5>
-                        <p>Register your shop to get online customers at your shop</p>
-                        <button class="btn btn-light">Register shop</button>
+                        <h5>Appointment</h5>
+                        <p>Now book your appointment by sitting there.</p>
+                        <a href="#">
+                        <button class="btn btn-danger">Get Appointment</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/SI2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="text-align: center; font-size:150;">THE ONLINE SALOON</h5>
+                        
+                        
                     </div>
                 </div>
             </div>

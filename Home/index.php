@@ -25,26 +25,12 @@ session_start();
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="../index.php">Home <span class="sr-only">(current)</span></a>
-                </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="about.php">About Us</a>
+                    <a class="nav-link" href="#">About Us</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Services
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Get Appointment</a>
-                        <a class="dropdown-item" href="#">Products</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Registrer your shop</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../contact.php">Contact Us</a>
-                </li>
+
+
 
             </ul>
 
@@ -118,6 +104,14 @@ session_start();
                             <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
                             <input type="password" class="form-control" id="cexampleInputPassword1" name="confirm_password">
                         </div>
+                        <div class="mb-3">
+                            <label for="exampleInputMobile" class="form-label">Mobile No.</label>
+                            <input type="number" class="form-control" id="exampleInputMobile" name="mobile_no">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputAddress" class="form-label">Address</label>
+                            <textarea name="address" id="exampleInputAddress" class="form-control" cols="30" rows="10"></textarea>
+                        </div>
 
                         <button type="submit" class="btn btn-primary" name="sign_up">Create account</button>
                     </form>
@@ -138,14 +132,14 @@ session_start();
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../images/shop1.jpg" class="d-block w-100" alt="...">
+                <img src="../images/bg-img2.jpg" class="d-block w-100" alt="..." style="height: 700px;">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Appointment</h5>
                     <p>Now book your appointment by sitting there.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../images/shop1.jpg" class="d-block w-100" alt="...">
+                <img src="../user/tgb/slide3.jpg" class="d-block w-100" alt="..." style="height: 700px;">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Products</h5>
                     <p>Order products online</p>
