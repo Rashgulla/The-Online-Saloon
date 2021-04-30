@@ -132,10 +132,10 @@ session_start();
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../images/bg2.jpg" class="d-block w-100" alt="..." style="height: 740px;">
+                <img src="../images/bg2.jpg" class="d-block w-100" alt="..." style="height: 755px;">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 style="font-size: 70px; color:hsl(10, 90%, 40%); ">Wel-come to User</h5>
-                    <p style="font-size: 50px; color:yellow; text-decoration:underline;">Book Saloon-Appointment or Buy Product</p>
+                    <h5 style="font-size: 70px; color:orange; ">Welcome to User</h5>
+                    <p style="font-size: 50px; color:yellow; text-decoration:underline;">Book Saloon-Appointment or Buy Product Now</p>
                 </div>
             </div>
             

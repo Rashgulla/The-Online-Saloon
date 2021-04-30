@@ -139,7 +139,7 @@ session_start();
             <div class="carousel-item active">
                 <img src="../images/bg2.jpg" class="d-block w-100"  style="height: 755px;" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 style="font-size: 70px; color:ORANGE; text-decoration:bold;" >Wel-Come to Saloon </h5>
+                    <h5 style="font-size: 70px; color:ORANGE; text-decoration:bold;" >Welcome to Saloon </h5>
                     <p style="font-size: 40px; color:yellow; text-decoration:underline;"> Login or Register your shop to get online customers at your shop  </p>
                 </div>
             </div>
