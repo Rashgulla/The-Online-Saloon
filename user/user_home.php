@@ -154,7 +154,6 @@ if (!isset($_SESSION['email'])) {
                                 <a href="salon_details.php?salon_id=<?php echo $final['id'] ?>">
                                     <button type="button" class="btn btn-warning">See Details</button>
                                 </a>
-
                             </div>
                         </div>
                     </div>
