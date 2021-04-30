@@ -90,27 +90,32 @@ session_start();
         <section class="content">
             <div class="container-fluid d-flex justify-content-center">
                 <!-- Small boxes (Stat box) -->
-                <div class="row">
                 
+                <div class="row">
+                    <?php
+                    include('../Home/connect.php');
+                    $id = $_GET['salon_id'];
+                    $sql="SELECT * FROM saloon WHERE id='$id'";
+                    $results=$conn->query($sql);
+                    while($final=$results->fetch_assoc()){
+                    ?>
                     <div class="col-sm-9">
 
-
-                        <img src="../images/bg-img4.jpg" class="mt-4" alt="" style="height: 250px; width: 250px;"><br>
-                        <h3><label class="mt-4" style="color: red; font-weight:bold;">Saloon Name :</label><br> </h3>
+                        
+                        <img src="../saloon_admin/uploads/<?php echo $final['picture']?>" class="mt-4" alt="" style="height: 250px; width: 250px;"><br>
+                        <h3><label class="mt-4" style="color: red; font-weight:bold;">Saloon Name :</label><?php echo $final['username']?><br> </h3>
                         <hr><br>
-                        <h3><label class="mt-4" style="color: red; font-weight:bold;">Mobile No.</label><br> </h3>
+                        <h3 class="text-lowercase"><label class="mt-4" style="color: red; font-weight:bold;">Email :</label><?php echo $final['email']?><br> </h3>
                         <hr><br>
-                        <!-- Example single danger button -->
-
-                       
-
-
-                        <h3><label class="mt-4" style="color: red; font-weight:bold;">Address</label><br> </h3>
+                        <h3><label class="mt-4" style="color: red; font-weight:bold;">Mobile No. :</label><?php echo $final['mobile_no']?><br> </h3>
                         <hr><br>
-
-
-                        <button type="button" class="btn btn-success" style="font-size: 15px;">Get Appointment</button>
+                        <h3><label class="mt-4" style="color: red; font-weight:bold;">Address :</label><?php echo $final['address']?><br> </h3>
+                        <hr><br>
+                        <button type="button" class="btn btn-success" style="font-size: 13px;">Get Appointment</button>
                     </div>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
         </section>

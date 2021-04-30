@@ -45,6 +45,11 @@
                <span> Add Service</span></a>
        </li>
        <li class="nav-item">
+           <a class="nav-link" href="serviceshow.php">
+               <i class="fas fa-fw fa-chart-area"></i>
+               <span> Manage Service</span></a>
+       </li>
+       <li class="nav-item">
            <a class="nav-link" href="../Saloon/saloon_logout.php">
                <i class="fas fa-fw fa-chart-area"></i>
                <span> Logout</span></a>
