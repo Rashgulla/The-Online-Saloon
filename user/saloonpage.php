@@ -37,7 +37,7 @@ session_start();
 
             <div class="form-container">
                 <form action="">
-    
+
                 </form>
             </div>
 
@@ -49,15 +49,15 @@ session_start();
 
             <nav class="navbar">
                 <ul>
-                    <li><a class="active" href="#home">home</a></li>
-                    <li><a href="product.php">products</a></li>
+                    <li><a class="active" href="user_home.php">home</a></li>
+                    <li><a href="TheOnlineSaloon\saloon shop.html">saloons</a></li>
 
 
                 </ul>
             </nav>
 
             <div class="icons">
-\
+
                 <a href="userprofile.php" class="fas fa-user"></a>
             </div>
 
@@ -71,14 +71,14 @@ session_start();
 
 
     <!-- <div class="container">-->
-    <!--<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div>
                 <img src="tgb/slide1.jpg" class="d-block w-100" alt="..." style="height: 500px;">
             </div>
 
         </div>
-    </div>-->
+    </div>
     <!--</div>-->
     <!-- home section ends -->
 
@@ -86,36 +86,34 @@ session_start();
 
     <section class="arrival" id="arrival">
 
-
-        <section class="content">
-            <div class="container-fluid d-flex justify-content-center">
-            <!-- Small boxes (Stat box) -->
+        <h1 class="heading"> <span>SALOONS</span> </h1>
+        <div class="container">
             <div class="row">
-                <div class="col-sm-9">
+                <?php
+                include('../Home/connect.php');
+                $sql = "SELECT * FROM saloon";
+                $results = $conn->query($sql);
 
-                    <?php
-                    include('../Home/connect.php');
+                while ($final = $results->fetch_assoc()) { ?>
 
-                    $id = $_POST['see_id'];
-                    $sql = "SELECT * FROM products WHERE id='$id'";
+                    <div class="col-sm-3 mt-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../saloon_admin/uploads/<?php echo $final['picture'] ?>" class="card-img-top" alt="No file">
+                            <div class="card-body" style="background-color:lightseagreen;">
+                                <h2 class="card-title" style="font-weight:bold;"><?php echo $final['username'] ?></h2>
+                                
+                                <a href="salon_details.php?salon_id=<?php echo $final['id']?>">
+                                    <button type="button" class="btn btn-warning">See Details</button>
+                                </a>
 
-                    $results = $conn->query($sql);
-                    $final = $results->fetch_assoc();
-                    ?>
+                            </div>
+                        </div>
+                    </div>
 
-                    <img src="../admin/uploads/<?php echo $final['picture'] ?>" class="mt-4" alt="<?php echo $final['picture'] ?>" style="height: 250px; width: 250px;"><br>
-                    <h3><label class="mt-4" style="color: red; font-weight:bold;">NAME :</label><br> <?php echo $final['name'] ?></h3>
-                    <hr><br>
-                    <h3><label class="mt-4" style="color: red; font-weight:bold;">PRICE :</label><br> <?php echo $final['price'] ?>Rs.</h3>
-                    <hr><br>
-                    <h3><label class="mt-4" style="color: red; font-weight:bold;">DESCRIPTION :</label><br> <?php echo $final['description'] ?></h3>
-                    <hr><br>
-                   
-                    <button type="button" class="btn btn-success mt-3" style="font-size:18px;">Book Appointment</button>
-                </div>
+                <?php
+                }
+                ?>
             </div>
-            </div>
-        </section>
         </div>
 
 

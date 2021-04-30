@@ -55,7 +55,7 @@ if (!isset($_SESSION['email'])) {
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link text-warning bg-dark">
+                <a href="saloonpage.php" class="nav-link text-warning bg-dark">
                     <i class="fa fa-pencil-square mr-3 text-danger fa-fw"></i>
                     Appointment
                 </a>
@@ -95,7 +95,7 @@ if (!isset($_SESSION['email'])) {
                         <h5>Products</h5>
                         <p>Get our products online</p>
                         <a href="product.php">
-                        <button class="btn btn-success">Get Product</button>
+                            <button class="btn btn-success">Get Product</button>
                         </a>
                     </div>
                 </div>
@@ -105,7 +105,7 @@ if (!isset($_SESSION['email'])) {
                         <h5>Appointment</h5>
                         <p>Now book your appointment by sitting there.</p>
                         <a href="#">
-                        <button class="btn btn-danger">Get Appointment</button>
+                            <button class="btn btn-danger">Get Appointment</button>
                         </a>
                     </div>
                 </div>
@@ -113,8 +113,8 @@ if (!isset($_SESSION['email'])) {
                     <img src="../images/SI2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 style="text-align: center; font-size:150;">THE ONLINE SALOON</h5>
-                        
-                        
+
+
                     </div>
                 </div>
             </div>
@@ -136,48 +136,43 @@ if (!isset($_SESSION['email'])) {
         <!--cards-->
         <div class="container">
             <div class="row">
-                <!--1-->
-                <div class="col-sm-3 mx-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://source.unsplash.com/1600x900/?haircut" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Shop 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="salon_details.php" class="btn btn-danger">See Details</a>
-                        </div>
-                    </div>
-                </div>
-                <!--2-->
-                <div class="col-sm-3 mx-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://source.unsplash.com/1600x900/?haircut" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Shop 2</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="salon_details.php" class="btn btn-danger">See Details</a>
-                        </div>
-                    </div>
-                </div>
-                <!--3-->
-                <div class="col-sm-3 mx-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://source.unsplash.com/1600x900/?haircut" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Shop 3</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="salon_details.php" class="btn btn-danger">See Details</a>
+                <?php
+                include('../Home/connect.php');
+                $sql = "SELECT * FROM saloon limit 3";
+                $results = $conn->query($sql);
+
+
+
+                while ($final = $results->fetch_assoc()) { ?>
+
+                    <div class="col-sm-4 mt-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../saloon_admin/uploads/<?php echo $final['pic'] ?>" class="card-img-top" alt="No file">
+                            <div class="card-body" style="background-color:lightseagreen;">
+                                <h2 class="card-title" style="font-weight:bold;"><?php echo $final['username'] ?></h2>
+                                
+                                <a href="salon_details.php?see_id=<?php echo $final['id'] ?>">
+                                    <button type="button" class="btn btn-warning">See Details</button>
+                                </a>
+
+                            </div>
                         </div>
                     </div>
 
-                </div>
+                <?php
+                }
+                ?>
 
-                <div class="col-sm-3">
-                    <button type="button" class="btn btn-primary btn-sm my-4 mx-4">View More....</button>
-                </div>
+
+
+
             </div>
+
+        </div>
+        <div class="col-sm-3">
+            <a href="saloonpage.php">
+                <button type="button" class="btn btn-primary btn-sm my-4 mx-4">View More....</button>
+            </a>
         </div>
         <hr>
         <h2>Get Your Products Here..</h2>

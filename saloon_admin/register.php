@@ -113,16 +113,16 @@ include('includes/navbar.php');
             }
             ?>
 
-                <form action="proupdate.php" method="post">
-                  <input type="hidden" name="edit" value="">
-                  
-                  <button type="submit" name="edit" class="btn btn-success"> EDIT</button>
-                  
-                </form>
-              
+            <form action="profileupdate.php" method="post">
+
+              <input type="hidden" value="<?php echo $_SESSION['id'] ?>" name="edit_id">
+              <button type="submit" name="edit" class="btn btn-success"> EDIT</button>
+
+            </form>
+
 
             </tr>
-         
+
           </tbody>
         </table>
 
