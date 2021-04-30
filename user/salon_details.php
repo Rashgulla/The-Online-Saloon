@@ -91,6 +91,7 @@ session_start();
             <div class="container-fluid d-flex justify-content-center">
                 <!-- Small boxes (Stat box) -->
                 <div class="row">
+                
                     <div class="col-sm-9">
 
 
@@ -100,58 +101,8 @@ session_start();
                         <h3><label class="mt-4" style="color: red; font-weight:bold;">Mobile No.</label><br> </h3>
                         <hr><br>
                         <!-- Example single danger button -->
-                        <h3>
-                            <div class="btn-group">
-                                <button type="button" style="font-size: 15px;" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Services
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Hair cut
-                                            </label>
-                                        </div>
-                                    </a>
-                                    <a class="dropdown-item">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Hair Wash
-                                            </label>
-                                        </div>
-                                    </a>
-                                    <a class="dropdown-item">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Hair color
-                                            </label>
-                                        </div>
-                                    </a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Beard Care</a>
-                                    <a class="dropdown-item">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Beard Cut
-                                            </label>
-                                        </div>
-                                    </a>
-                                    <a class="dropdown-item">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Beard color
-                                            </label>
-                                        </div>
-                                    </a>
 
-                                </div> <bR>
-                        </h3>
-                        <hr> <br>
+                       
 
 
                         <h3><label class="mt-4" style="color: red; font-weight:bold;">Address</label><br> </h3>

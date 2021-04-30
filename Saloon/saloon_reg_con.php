@@ -10,7 +10,7 @@
     $address = $_POST['address'];
 
     $cimage = $_FILES['pic']['name'];
-	$cimage_tmp = $_FILES['picture']['tmp_name'];
+	$cimage_tmp = $_FILES['pic']['tmp_name'];
     move_uploaded_file($cimage_tmp,"../saloon_admin/uploads/$cimage");
     
     if($password==$confirm_password)
