@@ -120,6 +120,9 @@ include('../Home/connect.php');
 
 if(isset($_POST['save'])){
     $username = $_POST['username'];
+    $email = $_POST['email'];
+    $mobile = $_POST['mobile'];
+    $address = $_POST['address'];
 
 }
 
