@@ -12,7 +12,7 @@ session_start();
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>The Online Salon</title>
+    <title>The Online Salon || User</title>
 </head>
 
 <body>
@@ -110,7 +110,7 @@ session_start();
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputAddress" class="form-label">Address</label>
-                            <textarea name="address" id="exampleInputAddress" class="form-control" cols="30" rows="10"></textarea>
+                            <textarea name="address" id="exampleInputAddress" class="form-control" cols="30" rows="4"></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary" name="sign_up">Create account</button>
@@ -132,29 +132,16 @@ session_start();
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../images/bg-img2.jpg" class="d-block w-100" alt="..." style="height: 700px;">
+                <img src="../images/bg2.jpg" class="d-block w-100" alt="..." style="height: 740px;">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Appointment</h5>
-                    <p>Now book your appointment by sitting there.</p>
+                    <h5 style="font-size: 70px; color:hsl(10, 90%, 40%); ">Wel-come to User</h5>
+                    <p style="font-size: 50px; color:yellow; text-decoration:underline;">Book Saloon-Appointment or Buy Product</p>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="../user/tgb/slide3.jpg" class="d-block w-100" alt="..." style="height: 700px;">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Products</h5>
-                    <p>Order products online</p>
-                </div>
-            </div>
+            
 
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+       
     </div>
     <hr>
     
