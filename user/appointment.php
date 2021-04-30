@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +13,7 @@
   <link rel="stylesheet" href="appointment.css">
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900" rel="stylesheet">
- 
+
 </head>
 
 <body>
@@ -20,54 +23,61 @@
     <div class="container-time">
       <h2 class="heading">The Online Saloon</h2>
       <h3 class="heading-days">Happy Saloon</h3>
-      <p>Monday-Sunday </p>
-      <p>11am - 10pm (Any style any time)</p>
+      <p> </p>
+      <p></p>
 
-      <h3 class="heading-days">Saturday </h3>
-      <p>Week off</p>
-      <p>Make your style with our saloon</p>
+      <h3 class="heading-days"> </h3>
+      <p></p>
+      <p></p>
 
       <hr>
 
-      <h4 class="heading-phone">Call Us: (123) 12-34-567</h4>
+      <h4 class="heading-phone"></h4>
     </div>
 
     <div class="container-form">
       <form action="#">
-       <h2>Book your appointment now</h2>
+        <h2>Book your appointment now</h2>
 
         <div class="form-field">
           <p>Your Name</p>
-          <input class="font-weight-bolder" type="text" placeholder="Your Name">
+          <input class="font-weight-bolder" type="text" placeholder="Your Name" required>
         </div>
         <div class="form-field">
 
           <p>Your email</p>
-          <input class="font-weight-bolder" type="email" placeholder="Your email">
+          <input class="font-weight-bolder" type="email" placeholder="Your email" required>
         </div>
         <div class="form-field">
           <p>Your Mobile no.</p>
-          <input class="font-weight-bolder" type="number" placeholder="Your Mobile no.">
+          <input class="font-weight-bolder" type="number" placeholder="Your Mobile no." required>
         </div>
         <div class="form-field">
           <p>Date</p>
-          <input class="font-weight-bolder" type="date">
+          <input class="font-weight-bolder" type="date" required>
         </div>
         <div class="form-field">
           <p>Time</p>
-          <input class="font-weight-bolder" type="time">
+          <input class="font-weight-bolder" type="time" required>
         </div>
         <br />
 
         <select class="custom-select">
-  <option selected>Select service</option>
-  <option value="1">Hair cut</option>
-  <option value="2">Hair color</option>
-  <option value="3">Hair wash</option>
-  <option value="3">Beard set</option>
-  <option value="3">Beard color</option>
-  <option value="3">massage</option>
-</select>
+          <?php
+          include('../Home/connect.php');
+          $id = $_GET['saloon_id'];
+          $sql = "SELECT * FROM services WHERE saloon_id='$id'";
+          $results = $conn->query($sql);
+          echo $sql;
+          while ($final = $results->fetch_assoc()) {
+          ?>
+
+            <option value="<?php echo $final['service'] . ' ' . $final['price'] . 'Rs.' ?>"><?php echo $final['service'] . ' ' . $final['price'] . 'Rs' ?></option>
+
+          <?php
+          }
+          ?>
+        </select>
 
 
 
