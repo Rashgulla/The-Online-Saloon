@@ -78,7 +78,7 @@ include('includes/navbar.php');
 
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form">
+            <form role="form" action="profileupdate.php" method="POST">
                 <div class="box-body">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
@@ -118,12 +118,24 @@ include('includes/navbar.php');
 include('includes/footer.php');
 include('../Home/connect.php');
 
-if(isset($_POST['save'])){
+if (isset($_POST['save'])) {
+    $nid = $_SESSION['id'];
     $username = $_POST['username'];
     $email = $_POST['email'];
     $mobile = $_POST['mobile'];
     $address = $_POST['address'];
+    echo "$nid";
+    $sql = "UPDATE saloon SET email='$email',username='$username',mobile_no='$mobile',address='$address' WHERE id='$nid'";
 
+    if (mysqli_query($conn, $sql)) {
+
+                echo "<script>window.open('register.php','_self')</script>";
+    }
+    else{
+
+      header('register.php');
+
+    }
 }
 
 ?>

@@ -96,7 +96,7 @@ session_start();
                     <?php
                     include('../Home/connect.php');
 
-                    $id = $_GET['see_id'];
+                    $id = $_POST['see_id'];
                     $sql = "SELECT * FROM products WHERE id='$id'";
 
                     $results = $conn->query($sql);
@@ -111,7 +111,7 @@ session_start();
                     <h3><label class="mt-4" style="color: red; font-weight:bold;">DESCRIPTION :</label><br> <?php echo $final['description'] ?></h3>
                     <hr><br>
                    
-                    <button type="button" class="btn btn-success mt-3" style="font-size:18px;">Buy Product</button>
+                    <button type="button" class="btn btn-success mt-3" style="font-size:18px;">Book Appointment</button>
                 </div>
             </div>
             </div>
