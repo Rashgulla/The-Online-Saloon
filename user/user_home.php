@@ -151,7 +151,7 @@ if (!isset($_SESSION['email'])) {
                             <div class="card-body" style="background-color:chocolate;">
                                 <h2 class="card-title" style="font-weight:bold;"><?php echo $final['username'] ?></h2>
                                 
-                                <a href="salon_details.php?see_id=<?php echo $final['id'] ?>">
+                                <a href="salon_details.php?salon_id=<?php echo $final['id'] ?>">
                                     <button type="button" class="btn btn-warning">See Details</button>
                                 </a>
 

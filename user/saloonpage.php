@@ -50,7 +50,7 @@ session_start();
             <nav class="navbar">
                 <ul>
                     <li><a class="active" href="user_home.php">home</a></li>
-                    <li><a href="TheOnlineSaloon\saloon shop.html">saloons</a></li>
+                    <li><a href="TheOnlineSaloon\saloon shop.html"></a></li>
 
 
                 </ul>

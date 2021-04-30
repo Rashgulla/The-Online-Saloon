@@ -78,7 +78,7 @@ include('includes/navbar.php');
 
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form" action="profileupdate.php" method="POST">
+            <form role="form" action="profileupdate.php" method="POST" enctype="multipart/form-data">
                 <div class="box-body">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
@@ -92,6 +92,11 @@ include('includes/navbar.php');
                         <label for="exampleInputMobile">Mobile No.</label>
                         <input type="text" class="form-control" id="exampleInputMobile" placeholder="Enter new mobile number" name="mobile">
                     </div>
+                    <div class="form-group">
+                                <label for="pic">Picture</label>
+                                <input type="file" id="pic" name="pic">
+                                <p class="help-block">Upload a picture of a product</p>
+                            </div>
                     <div class="form-group">
                         <label for="exampleInputUsername">Address</label>
                         <textarea name="address" class="form-control" id="address" placeholder="Enter new address" cols="30" rows="10"></textarea>
@@ -124,8 +129,13 @@ if (isset($_POST['save'])) {
     $email = $_POST['email'];
     $mobile = $_POST['mobile'];
     $address = $_POST['address'];
-    echo "$nid";
-    $sql = "UPDATE saloon SET email='$email',username='$username',mobile_no='$mobile',address='$address' WHERE id='$nid'";
+
+    $cimage = $_FILES['pic']['name'];
+	$cimage_tmp = $_FILES['pic']['tmp_name'];
+    move_uploaded_file($cimage_tmp,"uploads/$cimage");
+
+    
+    $sql = "UPDATE saloon SET email='$email',username='$username',mobile_no='$mobile',address='$address',picture='$cimage' WHERE id='$nid'";
 
     if (mysqli_query($conn, $sql)) {
 
