@@ -84,7 +84,7 @@ if (!isset($_SESSION['email'])) {
         <!--slider-->
 
             <div class="container">
-                <img src="../images/p1.jpg" alt="No File">
+                
             </div>
 
 

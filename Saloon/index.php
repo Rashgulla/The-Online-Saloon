@@ -118,8 +118,9 @@ session_start();
                             <label for="exampleInputAddress" class="form-label">Address</label>
                             <textarea name="address" id="exampleInputAddress" class="form-control" cols="30" rows="4" required></textarea>
                         </div>
-
+                        
                         <button type="submit" class="btn btn-primary" name="sign_up">Create account</button>
+                        
                     </form>
                 </div>
                 <div class="modal-footer">

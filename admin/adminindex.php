@@ -39,15 +39,80 @@ include('adminpartials/head.php');
         <!-- Small boxes (Stat box) -->
         <div class="container">
           <div class="card">
-            <h3 class="card-header">Total saloon registered</h3>
-            <h2>
 
-              <?php echo "hello";?>
-            
-            </h2>
+
+            <div class="col-lg-3 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-yellow">
+                <div class="inner">
+                  <h3>
+                    <?php
+                    include('../Home/connect.php');
+                    $sql = "SELECT id FROM users ORDER BY id";
+                    $results = mysqli_query($conn, $sql);
+                    $row = mysqli_num_rows($results);
+                    echo "$row";
+                    ?>
+                  </h3>
+
+                  <p>User Registrations</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-person-add"></i>
+                </div>
+                <a href="#" class="small-box-footer"> <i class="fa fa "></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-red">
+                <div class="inner">
+                  <h3>
+                    <?php
+                    include('../Home/connect.php');
+                    $sql = "SELECT id FROM saloon ORDER BY id";
+                    $results = mysqli_query($conn, $sql);
+                    $row = mysqli_num_rows($results);
+                    echo "$row";
+                    ?>
+                  </h3>
+
+                  <p>Saloon Registrations</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-person-add"></i>
+                </div>
+                <a href="saloonshow.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-blue">
+                <div class="inner">
+                  <h3>
+                    <?php
+                    include('../Home/connect.php');
+                    $sql = "SELECT id FROM products ORDER BY id";
+                    $results = mysqli_query($conn, $sql);
+                    $row = mysqli_num_rows($results);
+                    echo "$row";
+                    ?>
+                  </h3>
+
+                  <p>Total Products</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-person-add"></i>
+                </div>
+                <a href="productshow.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+            </div>
+
+
             <div class="card-body">
-</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              </p>
+
             </div>
           </div>
 

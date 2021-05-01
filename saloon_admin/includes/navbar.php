@@ -33,11 +33,7 @@
                <span>Saloon Profile</span></a>
        </li>
 
-       <li class="nav-item">
-           <a class="nav-link" href="schedule.php">
-               <i class="fas fa-fw fa-chart-area"></i>
-               <span> Schedule appointment</span></a>
-       </li>
+
 
        <li class="nav-item">
            <a class="nav-link" href="addservice.php">
