@@ -25,7 +25,7 @@ if (isset($_POST['login'])) {
         header('location: adminindex.php');
     } else {
         echo "<script> alert('Invalid credentials');
-        window.location.href='adminlogin.php';
+        window.location.href='adminhome.php';
         </script>";
     }
 }

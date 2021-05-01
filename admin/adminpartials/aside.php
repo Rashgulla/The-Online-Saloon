@@ -26,7 +26,11 @@
         <li>
           <a href="productshow.php">
             <i class="fa fa-th"></i> <span>Manage Products</span>
-
+          </a>
+        </li>
+        <li>
+          <a href="saloonshow.php">
+            <i class="fa fa-th"></i> <span>Manage Saloons</span>
           </a>
         </li>
 
