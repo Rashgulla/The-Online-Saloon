@@ -56,11 +56,9 @@ session_start();
 
             </nav>
             <div class="search">
-                <form class="form-inline my-2 my-lg-0" action="productsearch.php" method="GET">
+                <form class="form-inline my-2 my-lg-0" action="productsearch.php">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    
-                        <button type="submit" class="btn btn-warning btn-sm" name="search" id="search">Search</button>
-                    </a>
+                    <button type="button" class="btn btn-warning btn-sm">Search</button>
                 </form>
             </div>
             <div class="icons">
@@ -72,61 +70,49 @@ session_start();
 
     </header>
 
-    <!-- header section ends -->
-
-    <!-- home section starts  -->
-
-
-    <!-- <div class="container">-->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div>
-                <img src="tgb/slide1.jpg" class="d-block w-100" alt="..." style="height: 500px;">
-            </div>
-
-        </div>
-    </div>
-    <!--</div>-->
-    <!-- home section ends -->
-
-    <!-- arrival section starts  -->
-
     <section class="arrival" id="arrival">
 
         <h1 class="heading"> <span>PRODUCTS</span> </h1>
         <div class="container">
-            <div class="row">
+            <h1>Search results for <?php echo $_GET['search'] ?></h1>
+
+            <div class="result">
                 <?php
-                include('../Home/connect.php');
-                $sql = "SELECT * FROM products";
-                $results = $conn->query($sql);
+                if (isset($_GET['search'])) {
+                    include('../Home/connect.php');
+                    $name = $_GET['search'];
+                    $sql = "SELECT * FROM products WHERE name='$name'";
+                    $results = mysqli_query($conn, $sql);
 
-                while ($final = $results->fetch_assoc()) { ?>
+                    while ($final = mysqli_fetch_assoc($results)) {
+                        $pname = $final['name'];
+                        $image = $final['picture'];
+                        $price = $final['price'];
 
-                    <div class="col-sm-3 mt-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../admin/uploads/<?php echo $final['picture'] ?>" class="card-img-top" alt="No file">
-                            <div class="card-body" style="background-color:lightseagreen;">
-                                <h2 class="card-title" style="font-weight:bold;"><?php echo $final['name'] ?></h2>
-                                <h4 class="card-text" style="font-weight:bold;color: red;"><?php echo 'Rs.' . $final['price'] . ' Only' ?></h4>
-                                <a href="prodetails.php?see_id=<?php echo $final['id'] ?>">
-                                    <button type="button" class="btn btn-warning">See Details</button>
-                                </a>
+                ?>
 
+                        <div class="col-sm-3 mt-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="../admin/uploads/<?php echo $image ?>" class="card-img-top" alt="No file">
+                                <div class="card-body" style="background-color:lightseagreen;">
+                                    <h2 class="card-title" style="font-weight:bold;"><?php echo $pname ?></h2>
+                                    <h4 class="card-text" style="font-weight:bold;color: red;"><?php echo 'Rs.' . $price . ' Only' ?></h4>
+                                    <a href="prodetails.php?see_id=<?php echo $final['id'] ?>">
+                                        <button type="button" class="btn btn-warning">See Details</button>
+                                    </a>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
 
                 <?php
+                    }
                 }
                 ?>
+
             </div>
         </div>
     </section>
-
-    <!-- arrival section ends -->
-
-
 
 
 
