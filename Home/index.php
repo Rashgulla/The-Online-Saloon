@@ -27,7 +27,7 @@ session_start();
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="about us page/about.php">About Us</a>
                 </li>
 
 

@@ -43,7 +43,7 @@ if (!isset($_SESSION['email'])) {
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link text-warning bg-dark">
+                <a href="../Home/about us page/about.php" class="nav-link text-warning bg-dark">
                     <i class="fa fa-address-card mr-3 text-danger fa-fw"></i>
                     about
                 </a>
