@@ -4,7 +4,7 @@ session_start();
 if(isset($_POST['login'])){
 
     include('connect.php');
-
+    
     $username = $_POST['username'];
     $email = $_POST['email'];   
     $password = $_POST['password'];
@@ -18,6 +18,7 @@ if(isset($_POST['login'])){
 
     if($email==$final['email'] AND $password==$final['password'])
     {
+        $_SESSION['id'] = $final['id'];
         $_SESSION['username'] = $final['username'];
         $_SESSION['email'] = $final['email'];
         $_SESSION['password'] = $final['password'];

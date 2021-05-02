@@ -27,37 +27,23 @@ session_start();
 <body>
 
     <!-- header section starts  -->
-
-
     <header>
-
         <div class="header-1">
-
             <a href="#" class="logo" img src="tgb/logo"> <i class="fas fa-shopping-bag"></i> THE ONLINE SALOON </a>
 
-            <div class="form-container">
-                <form action="">
-
-                </form>
-            </div>
 
         </div>
 
         <div class="header-2">
-
             <div id="menu" class="fas fa-bars"></div>
-
             <nav class="navbar">
                 <ul>
                     <li><a class="active" href="#home">home</a></li>
                     <li><a href="product.php">products</a></li>
-
-
                 </ul>
             </nav>
-
             <div class="icons">
-                \
+
                 <a href="userprofile.php" class="fas fa-user"></a>
             </div>
 
@@ -112,9 +98,9 @@ session_start();
                             <h3><label class="mt-4" style="color: red; font-weight:bold;">Address :</label><?php echo $final['address'] ?><br> </h3>
                             <hr><br>
 
-                            <form action="appointment.php" method="POST">
+                            <a href="appointment.php?id=<?php echo $id?>">
                                 <button type="button" id="saloon_id" value="<?php echo $final['saloon_id'] ?>" class="btn btn-success" style="font-size: 13px;">Get Appointment</button>
-                            </form>
+                            </a>
                         </div>
                     <?php
                     }

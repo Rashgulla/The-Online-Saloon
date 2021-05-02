@@ -36,53 +36,50 @@ session_start();
     </div>
 
     <div class="container-form">
-      <form action="#">
+      <form method="POST">
         <h2>Book your appointment now</h2>
 
         <div class="form-field">
           <p>Your Name</p>
-          <input class="font-weight-bolder" type="text" placeholder="Your Name" required>
+          <input class="font-weight-bolder" type="text" placeholder="Your Name" name="name" required>
         </div>
         <div class="form-field">
-
           <p>Your email</p>
-          <input class="font-weight-bolder" type="email" placeholder="Your email" required>
+          <input class="font-weight-bolder" type="email" placeholder="Your email" name="email" required>
         </div>
         <div class="form-field">
           <p>Your Mobile no.</p>
-          <input class="font-weight-bolder" type="number" placeholder="Your Mobile no." required>
+          <input class="font-weight-bolder" type="number" placeholder="Your Mobile no." name="mobile_no" required>
         </div>
         <div class="form-field">
           <p>Date</p>
-          <input class="font-weight-bolder" type="date" required>
+          <input class="font-weight-bolder" type="date" name="date" required>
         </div>
         <div class="form-field">
           <p>Time</p>
-          <input class="font-weight-bolder" type="time" required>
+          <input class="font-weight-bolder" type="time" name="time" required>
         </div>
-        <br />
+        <br>
 
         <select class="custom-select">
           <?php
           include('../Home/connect.php');
-          $id = $_GET['saloon_id'];
+          $id = $_GET['id'];
           $sql = "SELECT * FROM services WHERE saloon_id='$id'";
           $results = $conn->query($sql);
           echo $sql;
           while ($final = $results->fetch_assoc()) {
           ?>
-
-            <option value="<?php echo $final['service'] . ' ' . $final['price'] . 'Rs.' ?>"><?php echo $final['service'] . ' ' . $final['price'] . 'Rs' ?></option>
-
+            <option value="<?php echo $final['service'] . '  ' . $final['price'] . 'Rs.' ?>"><?php echo $final['service'] . ' || ' . $final['price'] . 'Rs' ?></option>
+            <option value="<?php echo $final['sid'] ?>" hidden><?php echo $final['sid'] ?></option>
           <?php
           }
           ?>
         </select>
 
-
-
-
-        <button class="btn">Submit</button>
+        
+          <button type="submit" class="btn btn-success" name="confirm" style="font-size: 13px;">Confirm</button>
+        
       </form>
     </div>
   </div>
@@ -97,3 +94,26 @@ session_start();
 </body>
 
 </html>
+
+<?php
+include('../Home/connect.php');
+if (isset($_POST['confirm'])) {
+  $uid = $_SESSION['id'];
+  $uname = $_POST['name'];
+  $umail = $_POST['email'];
+  $umobile = $_POST['mobile_no'];
+  $date = $_POST['date'];
+  $time = $_POST['time'];
+  $sal_id = $id;
+  
+  $sql="INSERT INTO appointments(uid,name,mobile_no,date,time,service,sal_id) values('$uid','$uname','$umail','$umobile','$date','$time','$sal_id')";
+  $results=mysqli_query($conn,$sql);
+
+  if($results){
+    echo "done";
+  }
+  else{
+    echo "not done";
+  }
+}
+?>
