@@ -111,8 +111,9 @@ if (isset($_POST['confirm'])) {
   $service = $_POST['service'];
 
   $sid = substr($service, 0, 1);
+  $sname = substr($service, 1);
  
-  $sql = "INSERT INTO appointments(uid,sal_id,sid,uname,email,mobile_no,date,time,sname) values('$uid','$sal_id','$sid','$uname','$umail','$umobile','$date','$time','$service')";
+  $sql = "INSERT INTO appointments(uid,sal_id,sid,uname,email,mobile_no,date,time,sname) values('$uid','$sal_id','$sid','$uname','$umail','$umobile','$date','$time','$sname')";
   $results = mysqli_query($conn, $sql);
 
   if ($results) {
