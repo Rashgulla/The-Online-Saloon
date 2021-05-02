@@ -61,7 +61,7 @@ session_start();
         </div>
         <br>
 
-        <select class="custom-select">
+        <select class="custom-select" name="service">
           <?php
           include('../Home/connect.php');
           $id = $_GET['id'];
@@ -70,8 +70,10 @@ session_start();
           echo $sql;
           while ($final = $results->fetch_assoc()) {
           ?>
-            <option value="<?php echo $final['service'] . '  ' . $final['price'] . 'Rs.' ?>"><?php echo $final['service'] . ' || ' . $final['price'] . 'Rs' ?></option>
-            <option value="<?php echo $final['sid'] ?>" hidden><?php echo $final['sid'] ?></option>
+            <option name="service" value="<?php echo $final['sid'];
+                                          echo $final['service'] . '  ' . (($final['price']) + (($final['price'] * 10) / 100)) . 'Rs.' ?>"><?php echo $final['service'] . ' || ' . (($final['price']) + (($final['price'] * 10) / 100)) . 'Rs' ?></option>
+
+
           <?php
           }
           ?>
@@ -100,24 +102,25 @@ include('../Home/connect.php');
 if (isset($_POST['confirm'])) {
   $uid = $_SESSION['id'];
   $sal_id = $id;
-  $sid = $final['sid'];
+  //$sid = $_POST['sid'];
   $uname = $_POST['name'];
   $umail = $_POST['email'];
   $umobile = $_POST['mobile_no'];
   $date = $_POST['date'];
   $time = $_POST['time'];
-  $service = $final['service'];
+  $service = $_POST['service'];
 
-
-  $sql = "INSERT INTO appointments(uid,sal_id,uname,email,mobile_no,date,time) values('$uid','$sal_id','$uname','$umail','$umobile','$date','$time')";
+  $sid = substr($service, 0, 1);
+ 
+  $sql = "INSERT INTO appointments(uid,sal_id,sid,uname,email,mobile_no,date,time,sname) values('$uid','$sal_id','$sid','$uname','$umail','$umobile','$date','$time','$service')";
   $results = mysqli_query($conn, $sql);
 
   if ($results) {
-    echo "<script> alert('added');
+    echo "<script> alert('Appointment confirmed.');
     window.location.href='confirm.php';
     </script>";
   } else {
-    echo "<script> alert('not added');
+    echo "<script> alert('Appointment not confirmed');
     window.location.href='appointent.php';
     </script>";
   }
