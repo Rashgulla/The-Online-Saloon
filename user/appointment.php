@@ -77,9 +77,9 @@ session_start();
           ?>
         </select>
 
-        
-          <button type="submit" class="btn btn-success" name="confirm" style="font-size: 13px;">Confirm</button>
-        
+
+        <button type="submit" class="btn btn-success" name="confirm" style="font-size: 13px;">Confirm</button>
+
       </form>
     </div>
   </div>
@@ -99,21 +99,27 @@ session_start();
 include('../Home/connect.php');
 if (isset($_POST['confirm'])) {
   $uid = $_SESSION['id'];
+  $sal_id = $id;
+  $sid = $final['sid'];
   $uname = $_POST['name'];
   $umail = $_POST['email'];
   $umobile = $_POST['mobile_no'];
   $date = $_POST['date'];
   $time = $_POST['time'];
-  $sal_id = $id;
-  
-  $sql="INSERT INTO appointments(uid,name,mobile_no,date,time,service,sal_id) values('$uid','$uname','$umail','$umobile','$date','$time','$sal_id')";
-  $results=mysqli_query($conn,$sql);
+  $service = $final['service'];
 
-  if($results){
-    echo "done";
-  }
-  else{
-    echo "not done";
+
+  $sql = "INSERT INTO appointments(uid,sal_id,uname,email,mobile_no,date,time) values('$uid','$sal_id','$uname','$umail','$umobile','$date','$time')";
+  $results = mysqli_query($conn, $sql);
+
+  if ($results) {
+    echo "<script> alert('added');
+    window.location.href='confirm.php';
+    </script>";
+  } else {
+    echo "<script> alert('not added');
+    window.location.href='appointent.php';
+    </script>";
   }
 }
 ?>
