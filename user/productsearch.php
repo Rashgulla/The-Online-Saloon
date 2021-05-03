@@ -47,18 +47,20 @@ session_start();
 
             <div id="menu" class="fas fa-bars"></div>
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-                <ul class="navbar-nav mr-auto">
+            <nav class="navbar">
+                <ul>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="user_home.php">Home</a>
+                        <a class="active" href="user_home.php">Home</a>
+                        
                     </li>
+                    <li><a class="active" href="product.php">Products</a></li>
                 </ul>
 
             </nav>
             <div class="search">
-                <form class="form-inline my-2 my-lg-0" action="productsearch.php">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button type="button" class="btn btn-warning btn-sm">Search</button>
+                <form class="form-inline my-2 my-lg-0" method="GET">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
+                    <button type="submit" class="btn btn-warning btn-sm">Search</button>
                 </form>
             </div>
             <div class="icons">
@@ -74,40 +76,40 @@ session_start();
 
         <h1 class="heading"> <span>PRODUCTS</span> </h1>
         <div class="container">
-            <h1>Search results for <?php echo $_GET['search'] ?></h1>
+            <h1>Search results for <b><em><?php echo $_GET['search'] ?></em></b></h1>
 
             <div class="result">
                 <?php
-                if (isset($_GET['search'])) {
-                    include('../Home/connect.php');
-                    $name = $_GET['search'];
-                    $sql = "SELECT * FROM products WHERE name='$name'";
-                    $results = mysqli_query($conn, $sql);
 
-                    while ($final = mysqli_fetch_assoc($results)) {
-                        $pname = $final['name'];
-                        $image = $final['picture'];
-                        $price = $final['price'];
+                include('../Home/connect.php');
+                $name = $_GET['search'];
+                $sql = "SELECT * FROM products WHERE name='$name'";
+                $results = mysqli_query($conn, $sql);
+
+                while ($final = mysqli_fetch_assoc($results)) {
+                    $pname = $final['name'];
+                    $image = $final['picture'];
+                    $price = $final['price'];
 
                 ?>
 
-                        <div class="col-sm-3 mt-4">
-                            <div class="card" style="width: 18rem;">
-                                <img src="../admin/uploads/<?php echo $image ?>" class="card-img-top" alt="No file">
-                                <div class="card-body" style="background-color:lightseagreen;">
-                                    <h2 class="card-title" style="font-weight:bold;"><?php echo $pname ?></h2>
-                                    <h4 class="card-text" style="font-weight:bold;color: red;"><?php echo 'Rs.' . $price . ' Only' ?></h4>
-                                    <a href="prodetails.php?see_id=<?php echo $final['id'] ?>">
-                                        <button type="button" class="btn btn-warning">See Details</button>
-                                    </a>
+                    <div class="col-sm-3 mt-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../admin/uploads/<?php echo $image ?>" class="card-img-top" alt="No file">
+                            <div class="card-body" style="background-color:lightseagreen;">
+                                <h2 class="card-title" style="font-weight:bold;"><?php echo $pname ?></h2>
+                                <h4 class="card-text" style="font-weight:bold;color: red;"><?php echo 'Rs.' . $price . ' Only' ?></h4>
+                                <a href="prodetails.php?see_id=<?php echo $final['id'] ?>">
+                                    <button type="button" class="btn btn-warning">See Details</button>
+                                </a>
 
-                                </div>
                             </div>
                         </div>
+                    </div>
 
                 <?php
-                    }
                 }
+
                 ?>
 
             </div>

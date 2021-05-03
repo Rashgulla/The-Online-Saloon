@@ -47,20 +47,20 @@ session_start();
 
             <div id="menu" class="fas fa-bars"></div>
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-                <ul class="navbar-nav mr-auto">
+            <nav class="navbar">
+                <ul>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="user_home.php">Home</a>
+                        <a class="active" href="user_home.php">Home</a>
                     </li>
                 </ul>
 
             </nav>
             <div class="search">
                 <form class="form-inline my-2 my-lg-0" action="productsearch.php" method="GET">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
                     
-                        <button type="submit" class="btn btn-warning btn-sm" name="search" id="search">Search</button>
-                    </a>
+                        <button type="submit" class="btn btn-warning btn-sm">Search</button>
+                
                 </form>
             </div>
             <div class="icons">

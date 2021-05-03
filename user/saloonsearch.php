@@ -50,7 +50,7 @@ session_start();
             <nav class="navbar">
                 <ul>
                     <li><a class="active" href="user_home.php">home</a></li>
-                    
+                    <li><a class="active" href="saloonpage.php">Saloons</a></li>    
 
 
                 </ul>
@@ -58,9 +58,9 @@ session_start();
             <div class="search">
                 <form class="form-inline my-2 my-lg-0" action="saloonsearch.php" method="GET">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
-                    
-                        <button type="submit" class="btn btn-warning btn-sm">Search</button>
-                
+
+                    <button type="submit" class="btn btn-warning btn-sm">Search</button>
+
                 </form>
             </div>
             <div class="icons">
@@ -78,14 +78,7 @@ session_start();
 
 
     <!-- <div class="container">-->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div>
-                <img src="tgb/slide1.jpg" class="d-block w-100" alt="..." style="height: 500px;">
-            </div>
 
-        </div>
-    </div>
     <!--</div>-->
     <!-- home section ends -->
 
@@ -98,18 +91,23 @@ session_start();
             <div class="row">
                 <?php
                 include('../Home/connect.php');
-                $sql = "SELECT * FROM saloon";
+                $name = $_GET['search'];
+                $sql = "SELECT * FROM saloon WHERE username='$name'";
                 $results = $conn->query($sql);
 
-                while ($final = $results->fetch_assoc()) { ?>
+                while ($final = $results->fetch_assoc()) {
+                    $sname = $final['username'];
+                    $picture = $final['picture'];
+
+                ?>
 
                     <div class="col-sm-3 mt-4">
                         <div class="card" style="width: 18rem;">
-                            <img src="../saloon_admin/uploads/<?php echo $final['picture'] ?>" class="card-img-top" alt="No file">
+                            <img src="../saloon_admin/uploads/<?php echo $picture ?>" class="card-img-top" alt="No file">
                             <div class="card-body" style="background-color:chocolate;">
-                                <h2 class="card-title" style="font-weight:bold;"><?php echo $final['username'] ?></h2>
-                                
-                                <a href="salon_details.php?salon_id=<?php echo $final['id']?>">
+                                <h2 class="card-title" style="font-weight:bold;"><?php echo $sname ?></h2>
+
+                                <a href="salon_details.php?salon_id=<?php echo $final['id'] ?>">
                                     <button type="button" class="btn btn-warning">See Details</button>
                                 </a>
 
