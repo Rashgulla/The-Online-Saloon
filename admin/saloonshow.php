@@ -20,6 +20,12 @@ include('adminpartials/head.php');
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header">
+            <div class="search">
+            <form class="form-inline my-2 my-lg-0" action="searchsaloon.php" method="GET">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
+                <button type="submit" class="btn btn-success">Search</button>
+            </form>
+            </div>
                 <h1>
                     Show Saloons
 
