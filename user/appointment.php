@@ -36,7 +36,7 @@ session_start();
     </div>
 
     <div class="container-form">
-      <form method="POST">
+      <form method="POST" action="../razorpay/index.php">
         <h2>Book your appointment now</h2>
 
         <div class="form-field">
@@ -79,7 +79,7 @@ session_start();
           ?>
         </select>
 
-
+          <input type="text" value="<?php echo $_GET['id']?>" name="sal_id" hidden>
         <button type="submit" class="btn btn-success" name="confirm" style="font-size: 13px;">Confirm</button>
 
       </form>
@@ -96,34 +96,3 @@ session_start();
 </body>
 
 </html>
-
-<?php
-include('../Home/connect.php');
-if (isset($_POST['confirm'])) {
-  $uid = $_SESSION['id'];
-  $sal_id = $id;
-  //$sid = $_POST['sid'];
-  $uname = $_POST['name'];
-  $umail = $_POST['email'];
-  $umobile = $_POST['mobile_no'];
-  $date = $_POST['date'];
-  $time = $_POST['time'];
-  $service = $_POST['service'];
-
-  $sid = substr($service, 0, 1);
-  $sname = substr($service, 1);
- 
-  $sql = "INSERT INTO appointments(uid,sal_id,sid,uname,email,mobile_no,date,time,sname) values('$uid','$sal_id','$sid','$uname','$umail','$umobile','$date','$time','$sname')";
-  $results = mysqli_query($conn, $sql);
-
-  if ($results) {
-    echo "<script> alert('Appointment confirmed.');
-    window.location.href='confirm.php';
-    </script>";
-  } else {
-    echo "<script> alert('Appointment not confirmed');
-    window.location.href='appointent.php';
-    </script>";
-  }
-}
-?>
