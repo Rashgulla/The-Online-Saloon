@@ -115,6 +115,10 @@ session_start();
                             <input type="file" class="form-control" id="exampleInputPicture" name="pic" required>
                         </div>
                         <div class="mb-3">
+                            <label for="exampleInputQR" class="form-label">Your QR Code For Payment</label>
+                            <input type="file" class="form-control" id="exampleInputQR" name="qr" required>
+                        </div>
+                        <div class="mb-3">
                             <label for="exampleInputAddress" class="form-label">Address</label>
                             <textarea name="address" id="exampleInputAddress" class="form-control" cols="30" rows="4" required></textarea>
                         </div>

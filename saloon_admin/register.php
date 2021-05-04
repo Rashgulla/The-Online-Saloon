@@ -103,11 +103,17 @@ include('includes/navbar.php');
                   $name = $row['username'];
                   $phone = $row['mobile_no'];
                   $add = $row['address'];
-                  echo "<h3><label>ID</label> : $saloon_id</h3><hr>";
+                  $pic = $row['picture'];
+                  $qr = $row['QR'];
+                  ?>
+                  <?php echo "<h3><label>ID</label> : $saloon_id</h3><hr>";
                   echo "<h3><label>Mail</label> : $mail</h3><hr>";
                   echo "<h3><label>Username</label> : $name</h3><hr>";
                   echo "<h3><label>Phone No</label> : $phone</h3><hr>";
-                  echo "<h3><label>Address</label> : $add</h3><hr>";
+                  echo "<h3><label>Address</label> : $add</h3><hr>";?>
+                  <img src="../saloon_admin/uploads/<?php echo $pic?>" class="mt-4" alt="no file" style="height: 200px; width: 200px;"><br>
+                  <img src="../saloon_admin/qr/<?php echo $qr?>" class="mt-4" alt="no file" style="height: 200px; width: 200px;"><br>
+                <?php
                 }
               }
             }

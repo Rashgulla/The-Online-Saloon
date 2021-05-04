@@ -97,6 +97,11 @@ include('includes/navbar.php');
                                 <input type="file" id="pic" name="pic">
                                 <p class="help-block">Upload a picture of a product</p>
                             </div>
+                            <div class="form-group">
+                                <label for="qr">QR</label>
+                                <input type="file" id="qr" name="qr">
+                                <p class="help-block">Upload a picture of QR for payment</p>
+                            </div>
                     <div class="form-group">
                         <label for="exampleInputUsername">Address</label>
                         <textarea name="address" class="form-control" id="address" placeholder="Enter new address" cols="30" rows="10"></textarea>
@@ -134,8 +139,11 @@ if (isset($_POST['save'])) {
 	$cimage_tmp = $_FILES['pic']['tmp_name'];
     move_uploaded_file($cimage_tmp,"uploads/$cimage");
 
-    
-    $sql = "UPDATE saloon SET email='$email',username='$username',mobile_no='$mobile',address='$address',picture='$cimage' WHERE id='$nid'";
+    $qr = $_FILES['qr']['name'];
+    $qr_tmp = $_FILES['qr']['tmp_name'];
+    move_uploaded_file($qr_tmp, "../saloon_admin/qr/$qr");
+
+    $sql = "UPDATE saloon SET email='$email',username='$username',mobile_no='$mobile',address='$address',picture='$cimage',QR='$qr' WHERE id='$nid'";
 
     if (mysqli_query($conn, $sql)) {
 
