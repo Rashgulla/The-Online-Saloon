@@ -60,6 +60,12 @@ if (!isset($_SESSION['email'])) {
                     Appointment
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="myappointments.php" class="nav-link text-warning bg-dark">
+                    <i class="fa fa-pencil-square mr-3 text-danger fa-fw"></i>
+                   My Appointments
+                </a>
+            </li>
         </ul>
 
         <ul class="nav flex-column bg-white mb-0">

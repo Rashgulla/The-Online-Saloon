@@ -105,7 +105,7 @@ if (isset($_POST['confirm'])) {
                                 url: 'payment_process.php',
                                 data: "payment_id=" + response.razorpay_payment_id,
                                 success: function(result) {
-                                      window.location.href = "thank_you.php";
+                                      window.location.href = "../user/myappointments.php";
                                 }
                             });
                         }
