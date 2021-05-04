@@ -124,7 +124,7 @@ include('includes/footer.php');
 include('../Home/connect.php');
 
 if (isset($_POST['save'])) {
-    $nid = $_SESSION['id'];
+    $nid = $_SESSION['saloon_id'];
     $username = $_POST['username'];
     $email = $_POST['email'];
     $mobile = $_POST['mobile'];

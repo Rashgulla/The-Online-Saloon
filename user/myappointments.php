@@ -88,10 +88,10 @@ if (!isset($_SESSION['email'])) {
             <thead>
                 <tr>
 
-                    <th scope="col">userid</th>
+                    <th scope="col">Saloon name</th>
                     <th scope="col">username</th>
-                    <th scope="col">email</th>
-                    <th scope="col">mobile no</th>
+                    <th scope="col">Saloon address</th>
+                    <th scope="col">saloon mobile no</th>
                     <th scope="col">date</th>
                     <th scope="col">time</th>
                     <th scope="col">service</th>
@@ -103,10 +103,22 @@ if (!isset($_SESSION['email'])) {
             $sql = "SELECT id FROM users WHERE email='$email'";
             $results = mysqli_query($conn, $sql);
             $final = mysqli_fetch_array($results);
+
             $uid = $final['id'];
-            $sql2 = "SELECT * FROM appointments WHERE uid='$uid'";
+            $sql2 = "SELECT * FROM appointments WHERE uid='$uid' and status='payment_done'";
             $results2 = mysqli_query($conn, $sql2);
 
+            $sal_id=$_SESSION['saloon_id'];
+            $sql3 = "SELECT username,mobile_no,address from saloon WHERE id='$sal_id'";
+            $results3 = mysqli_query($conn,$sql3);
+            if($results3){
+            while($row=mysqli_fetch_array($results3)){
+                $saloonname=$row['username'];
+                $mobile=$row['mobile_no'];
+                $address=$row['address'];
+
+            }
+            }
             /*$sal_id = $final2['sal_id'];
             $sql3 = "SELECT username FROM saloon where id='$sal_id'";
             $results3=mysqli_query($conn,$sql3);
@@ -119,10 +131,10 @@ if (!isset($_SESSION['email'])) {
                 <tbody>
                     <tr>
 
-                        <td><?php echo $final2['uid'] ?></td>
+                        <td><?php echo $saloonname ?></td>
                         <td><?php echo $final2['uname'] ?></td>
-                        <td><?php echo $final2['email'] ?></td>
-                        <td><?php echo $final2['mobile_no'] ?></td>
+                        <td><?php echo $address ?></td>
+                        <td><?php echo $mobile ?></td>
                         <td><?php echo $final2['date'] ?></td>
                         <td><?php echo $final2['time'] ?></td>
                         <td><?php echo $final2['sname'] ?></td>

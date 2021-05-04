@@ -57,7 +57,7 @@ include('../Home/connect.php');
 if (isset($_POST['add'])) {
 
 
-    $saloon_id = $_SESSION['id'];
+    $saloon_id = $_SESSION['saloon_id'];
     $service = $_POST['service'];
     $price = $_POST['price'];
     $desc = $_POST['description'];

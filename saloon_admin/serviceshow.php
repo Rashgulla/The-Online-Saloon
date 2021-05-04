@@ -19,7 +19,7 @@ include('includes/navbar.php');
                         <?php
                         include('../Home/connect.php');
                         $sno=0;
-                        $id=$_SESSION['id'];
+                        $id=$_SESSION['saloon_id'];
                         $sql = "SELECT * FROM services WHERE saloon_id='$id'";
 
                         $results = $conn->query($sql);

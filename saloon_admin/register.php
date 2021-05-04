@@ -89,7 +89,7 @@ include('includes/navbar.php');
             <?php
             //global $conn;
             include('../Home/connect.php');
-            $id = $_SESSION['id'];
+            $id = $_SESSION['saloon_id'];
             $sql = "SELECT * FROM saloon WHERE id='$id'";
 
             $results = mysqli_query($conn, $sql);
@@ -115,7 +115,7 @@ include('includes/navbar.php');
 
             <form action="profileupdate.php" method="post">
 
-              <input type="hidden" value="<?php echo $_SESSION['id'] ?>" name="edit_id">
+              <input type="hidden" value="<?php echo $_SESSION['saloon_id'] ?>" name="edit_id">
               <button type="submit" name="edit" class="btn btn-success"> EDIT</button>
 
             </form>

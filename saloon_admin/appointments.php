@@ -38,8 +38,9 @@ include('includes/navbar.php');
                 </thead>
                 <?php
                 include('../Home/connect.php');
-                $sal_id = $_SESSION['id'];
-                $sql = "SELECT * FROM appointments WHERE sal_id='$sal_id' and status='pending'";
+                $sal_id = $_SESSION['saloon_id'];
+                echo $sal_id;
+                $sql = "SELECT * FROM appointments WHERE sal_id='$sal_id' and status='payment_done'";
                 $results = mysqli_query($conn, $sql);
                 while ($final = mysqli_fetch_array($results)) { ?>
                     <tbody>

@@ -2,7 +2,7 @@
 session_start();
 
 include('../Home/connect.php');
-
+$aid=$_POST['aid'];
 if(isset($_POST['amt']) && isset($_POST['name'])){
     $amt=$_POST['amt'];
     $name=$_POST['name'];
@@ -18,7 +18,15 @@ if(isset($_POST['payment_id']) && isset($_SESSION['OID'])){
     $payment_id=$_POST['payment_id'];
 
     mysqli_query($conn,"update payment set payment_status='complete',payment_id='$payment_id' where id='".$_SESSION['OID']."'");
-    //mysqli_query($conn,"update appointments set payment_status='complete' where id='$aid'");
+    $sql="SELECT aid FROM payment WHERE payment_id='$payment_id'";
+    $results=mysqli_query($conn,$sql);
+    if($results){
+        while($row=mysqli_fetch_array($results)){
+            $aid=$row['aid'];
+            mysqli_query($conn,"update appointments set status='payment_done' where id='$aid'");
+        }
+    }
+    
 
 }
 ?>
