@@ -24,7 +24,7 @@ if (isset($_POST['confirm'])) {
             echo "<script>window.open('../user/saloonpage.php','_self')</script>";
         }
         else {
-            $sql = "INSERT INTO appointments(uid,sal_id,sid,uname,email,mobile_no,date,time,sname) values('$uid','$sal_id','$sid','$uname','$umail','$umobile','$date','$time','$sname')";
+            $sql = "INSERT INTO appointments(uid,sal_id,sid,uname,email,mobile_no,date,time,sname,status) values('$uid','$sal_id','$sid','$uname','$umail','$umobile','$date','$time','$sname','pending')";
             $results = mysqli_query($conn, $sql);
     
             if ($results) {

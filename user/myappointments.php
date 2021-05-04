@@ -106,7 +106,7 @@ if (!isset($_SESSION['email'])) {
             $uid = $final['id'];
             $sql2 = "SELECT * FROM appointments WHERE uid='$uid'";
             $results2 = mysqli_query($conn, $sql2);
-            
+
             /*$sal_id = $final2['sal_id'];
             $sql3 = "SELECT username FROM saloon where id='$sal_id'";
             $results3=mysqli_query($conn,$sql3);
@@ -126,14 +126,14 @@ if (!isset($_SESSION['email'])) {
                         <td><?php echo $final2['date'] ?></td>
                         <td><?php echo $final2['time'] ?></td>
                         <td><?php echo $final2['sname'] ?></td>
-                        
-                        
+
+
                     </tr>
-
-                <?php
+                </tbody>
+            <?php
             }
-                ?>
-
+            ?>
+        </table>
 
     </div>
 
