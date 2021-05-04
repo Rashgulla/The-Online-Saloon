@@ -15,7 +15,7 @@ if (isset($_POST['confirm'])) {
     $sid = substr($service, 0, 1);
     $sname = substr($service, 1);
 
-    $query2 = "SELECT date,time FROM appointments WHERE date='$date' && time='$time' && sal_id='$sal_id'";
+    $query2 = "SELECT date,time FROM appointments WHERE date='$date' && time='$time' && sal_id='$sal_id' and sname='$service'";
     $run = mysqli_query($conn, $query2);
     if ($run) {
         $rc = mysqli_num_rows($run);
@@ -24,11 +24,11 @@ if (isset($_POST['confirm'])) {
             echo "<script>window.open('../user/saloonpage.php','_self')</script>";
         }
         else {
-            $sql = "INSERT INTO appointments(uid,sal_id,sid,uname,email,mobile_no,date,time,sname,status) values('$uid','$sal_id','$sid','$uname','$umail','$umobile','$date','$time','$sname','payment_pending')";
+            $sql = "INSERT INTO appointments(uid,sal_id,sid,uname,email,mobile_no,date,time,sname,status,a_status) values('$uid','$sal_id','$sid','$uname','$umail','$umobile','$date','$time','$sname','payment_pending','pending')";
             $results = mysqli_query($conn, $sql);
     
             if ($results) {
-                echo  "<script>alert('appointment booked')</script>";
+                echo  "<script>alert('appointment available Proceed to payment.')</script>";
             }
             else{
                 echo mysqli_error($conn);

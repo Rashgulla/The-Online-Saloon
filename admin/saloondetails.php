@@ -57,7 +57,7 @@ include('adminpartials/head.php');
                         <hr><br>
                         <h3>Address : <?php echo $final['address']?></h3>
                         <hr><br>
-                        <img src="saloon_admin/uploads/<?php echo $final['picture'] ?>" alt="<?php echo $final['picture'] ?>" style="height: 300px; width: 300px;">
+                        <img src="../saloon_admin/uploads/<?php echo $final['picture'] ?>" alt="<?php echo $final['picture'] ?>" style="height: 300px; width: 300px;">
 
                     </div>
                 </div>

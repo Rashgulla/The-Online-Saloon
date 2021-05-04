@@ -57,6 +57,12 @@ include('adminpartials/head.php');
                             <a href="saloondelete.php?d_id=<?php echo $final['id'] ?>">
                                 <button type="button" class="btn btn-danger">Delete</button>
                             </a>
+                            <a href="showappointment.php?id=<?php echo $final['id'] ?>">
+                                <button type="button" class="btn btn-success mx-2">Appointments</button>
+                            </a>
+                            <a href="paysaloon.php?id=<?php echo $final['id'] ?>">
+                                <button type="button" class="btn btn-warning">Pay</button>
+                            </a>
                             <hr>
 
                         <?php

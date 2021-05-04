@@ -46,7 +46,7 @@
                <span> Manage Service</span></a>
        </li>
        <li class="nav-item">
-           <a class="nav-link" href="serviceshow.php">
+           <a class="nav-link" href="completed_appointments.php">
                <i class="fas fa-fw fa-chart-area"></i>
                <span> Completed Appointments</span></a>
        </li>

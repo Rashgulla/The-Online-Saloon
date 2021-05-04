@@ -56,8 +56,8 @@ if (!isset($_SESSION['email'])) {
             </li>
             <li class="nav-item">
                 <a href="saloonpage.php" class="nav-link text-warning bg-dark">
-                    <i class="fa fa-pencil-square mr-3 text-danger fa-fw"></i>
-                    Appointment
+                <i class="fa fa-cubes mr-3 text-danger fa-fw"></i>
+                    Saloons
                 </a>
             </li>
             <li class="nav-item">

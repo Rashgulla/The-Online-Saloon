@@ -105,7 +105,7 @@ if (!isset($_SESSION['email'])) {
             $final = mysqli_fetch_array($results);
 
             $uid = $final['id'];
-            $sql2 = "SELECT * FROM appointments WHERE uid='$uid' and status='payment_done'";
+            $sql2 = "SELECT * FROM appointments WHERE uid='$uid' and status='payment_done' and a_status='pending'";
             $results2 = mysqli_query($conn, $sql2);
 
 

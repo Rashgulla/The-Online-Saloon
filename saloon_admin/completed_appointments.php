@@ -14,7 +14,7 @@ include('includes/navbar.php');
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Appointments</h1>
+        <h1 class="h3 mb-0 text-gray-800">Completed Appointments</h1>
 
     </div>
 
@@ -40,8 +40,9 @@ include('includes/navbar.php');
                 include('../Home/connect.php');
                 $sal_id = $_SESSION['saloon_id'];
                
-                $sql = "SELECT * FROM appointments WHERE sal_id='$sal_id' and status='payment_done' and a_status='pending'";
+                $sql = "SELECT * FROM appointments WHERE sal_id='$sal_id' and status='payment_done' and a_status='done'";
                 $results = mysqli_query($conn, $sql);
+
                 while ($final = mysqli_fetch_array($results)) { ?>
                     <tbody>
                         <tr>
@@ -52,11 +53,7 @@ include('includes/navbar.php');
                             <td><?php echo $final['time'] ?></td>
                             <td><?php echo $final['sname'] ?></td>
                             <td><?php echo $final['status'] ?></td>
-                            <td>
-                            <a href="handler.php?id=<?php echo $final['id']?>">
-                            <button type="submit" name="done" class="btn btn-outline-success">Done</button>
-                            </a>
-                            </td>
+                          
 
                         </tr>
                     </tbody>
