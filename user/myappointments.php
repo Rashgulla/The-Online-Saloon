@@ -108,23 +108,25 @@ if (!isset($_SESSION['email'])) {
             $sql2 = "SELECT * FROM appointments WHERE uid='$uid' and status='payment_done'";
             $results2 = mysqli_query($conn, $sql2);
 
-            $sal_id=$_SESSION['saloon_id'];
-            $sql3 = "SELECT username,mobile_no,address from saloon WHERE id='$sal_id'";
-            $results3 = mysqli_query($conn,$sql3);
-            if($results3){
-            while($row=mysqli_fetch_array($results3)){
-                $saloonname=$row['username'];
-                $mobile=$row['mobile_no'];
-                $address=$row['address'];
 
-            }
-            }
+
+
+
             /*$sal_id = $final2['sal_id'];
             $sql3 = "SELECT username FROM saloon where id='$sal_id'";
             $results3=mysqli_query($conn,$sql3);
             $final3=mysqli_fetch_array($results3);*/
             while ($final2 = mysqli_fetch_array($results2)) {
-
+                $sal_id = $final2['sal_id'];
+                $sql3 = "SELECT username,mobile_no,address from saloon WHERE id='$sal_id'";
+                $results3 = mysqli_query($conn, $sql3);
+                if ($results3) {
+                    while ($row = mysqli_fetch_array($results3)) {
+                        $saloonname = $row['username'];
+                        $mobile = $row['mobile_no'];
+                        $address = $row['address'];
+                    }
+                }
             ?>
 
 
