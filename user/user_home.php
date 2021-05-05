@@ -27,7 +27,7 @@ if (!isset($_SESSION['email'])) {
                 <div class="media-body">
 
                     <a href="userprofile.php" style="text-decoration: none; color:white;">
-                        <h3><?php echo $_SESSION['username'] ?></h3>
+                        <h3>Profile</h3>
                     </a>
 
                 </div>

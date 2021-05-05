@@ -19,7 +19,7 @@ if(isset($_POST['login'])){
     if($email==$final['email'] AND $password==$final['password'])
     {
         $_SESSION['id'] = $final['id'];
-        $_SESSION['username'] = $final['username'];
+        //$_SESSION['username'] = $final['username'];
         $_SESSION['email'] = $final['email'];
         $_SESSION['password'] = $final['password'];
         header('location: ../user/user_home.php');

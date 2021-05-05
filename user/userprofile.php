@@ -26,7 +26,7 @@ if (!isset($_SESSION['email'])) {
                 <div class="media-body">
 
                     <a href="userprofile.php" style="text-decoration: none; color:white;">
-                        <h3><?php echo $_SESSION['username'] ?></h3>
+                        <h3>Profile</h3>
                     </a>
 
                 </div>
@@ -39,25 +39,37 @@ if (!isset($_SESSION['email'])) {
             <li class="nav-item">
                 <a href="user_home.php" class="nav-link text-warning bg-dark">
                     <i class="fa fa-home mr-3 text-danger fa-fw"></i>
-                    home
+                    Home
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link text-warning bg-dark">
                     <i class="fa fa-address-card mr-3 text-danger fa-fw"></i>
-                    about
+                    About
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link text-warning bg-dark">
                     <i class="fa fa-cubes mr-3 text-danger fa-fw"></i>
-                    products
+                    Products
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link text-warning bg-dark">
                     <i class="fa fa-pencil-square mr-3 text-danger fa-fw"></i>
-                    Appointment
+                    Saloons
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="myappointments.php" class="nav-link text-warning bg-dark">
+                    <i class="fa fa-pencil-square mr-3 text-danger fa-fw"></i>
+                   My Appointments
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="myorders.php" class="nav-link text-warning bg-dark">
+                    <i class="fa fa-pencil-square mr-3 text-danger fa-fw"></i>
+                   My Orders
                 </a>
             </li>
         </ul>
