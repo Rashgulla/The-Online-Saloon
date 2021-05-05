@@ -74,12 +74,12 @@ session_start();
           <textarea class="font-weight-bolder" name="address" id="address" cols="30" rows="10" required></textarea>
         </div>
         <div class="form-field">
-          <p>time</p>
-          <input class="font-weight-bolder" type="time" name="time" value="<?php echo date('h:i:s')?>">
+          
+          <input class="font-weight-bolder" type="time" name="time" value="<?php echo date('h:i:s')?>" hidden>
         </div>
         <div class="form-field">
-          <p>date</p>
-          <input class="font-weight-bolder" type="date" name="date" value="<?php echo date('Y-m-d')?>">
+          
+          <input class="font-weight-bolder" type="date" name="date" value="<?php echo date('Y-m-d')?>" hidden>
         </div>
         <br>
 

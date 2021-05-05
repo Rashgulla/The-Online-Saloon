@@ -43,7 +43,7 @@ if (isset($_POST['buynow'])) {
                                                                     }
                                                                 }
 
-                                                                ?>">
+                                                                ?>" hidden>
         <input type="textbox" name="uname" value="<?php echo $uname ?>" id="uname" placeholder="Enter your name" readonly><br /><br />
         <input type="textbox" name="pname" value="<?php echo $pname ?>" id="pname" placeholder="Enter your name" readonly><br /><br />
         <input type="textbox" name="amt" value="
@@ -88,7 +88,7 @@ if (isset($_POST['buynow'])) {
                                 url: 'payment_process.php',
                                 data: "payment_id=" + response.razorpay_payment_id,
                                 success: function(result) {
-                                    window.location.href = "../users/myorders.php";
+                                    window.location.href = "../user/myorders.php";
                                 }
                             });
                         }

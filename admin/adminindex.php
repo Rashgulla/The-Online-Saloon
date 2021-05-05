@@ -108,6 +108,28 @@ include('adminpartials/head.php');
                 <a href="productshow.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
+            <div class="col-lg-3 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-green">
+                <div class="inner">
+                  <h3>
+                    <?php
+                    include('../Home/connect.php');
+                    $sql = "SELECT id FROM orders WHERE status='payment_done' ORDER BY id";
+                    $results = mysqli_query($conn, $sql);
+                    $row = mysqli_num_rows($results);
+                    echo "$row";
+                    ?>
+                  </h3>
+
+                  <p>Total Orders</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-person-add"></i>
+                </div>
+                <a href="ordershow.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+            </div>
 
 
             <div class="card-body">

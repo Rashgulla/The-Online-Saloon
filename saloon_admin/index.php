@@ -49,7 +49,19 @@ include('includes/navbar.php');
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Total APPOINTMENT</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800">1</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800">
+              <?php
+               include('../Home/connect.php');
+               $id=$_SESSION['saloon_id'];
+               $sql = "SELECT id FROM appointments WHERE id='$id'  and status='payment_done' ORDER BY id";
+               $results = mysqli_query($conn, $sql);
+               $row = mysqli_num_rows($results);
+               echo "$row";
+              
+              ?>
+              
+              
+              </div>
             </div>
             <div class="col-auto">
               
