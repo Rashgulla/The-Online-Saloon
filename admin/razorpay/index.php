@@ -81,14 +81,14 @@ if (isset($_POST['buynow'])) {
                         "currency": "INR",
                         "name": "The Online Salon",
                         "description": "Test Transaction",
-                        "image": "../images/logo.jpeg",
+                        "image": "../../images/logo.jpeg",
                         "handler": function(response) {
                             jQuery.ajax({
                                 type: 'post',
                                 url: 'payment_process.php',
                                 data: "payment_id=" + response.razorpay_payment_id,
                                 success: function(result) {
-                                    window.location.href = "../user/myorders.php";
+                                    window.location.href = "../../user/myorders.php";
                                 }
                             });
                         }
