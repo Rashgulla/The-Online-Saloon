@@ -57,7 +57,7 @@ session_start();
         </div>
         <div class="form-field">
           <p>Time</p>
-          <input class="font-weight-bolder" type="time" name="time" required>
+          <input class="font-weight-bolder" type="time" name="time" min="9:00" max="20:00" required>
         </div>
         <br>
 

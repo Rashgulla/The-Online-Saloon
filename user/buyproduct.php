@@ -36,9 +36,27 @@ session_start();
     </div>
 
     <div class="container-form">
-      <form method="POST" action="../razorpay/index.php">
-        <h2>Buy Your Product Now</h2>
+      <form method="POST" action="../admin/razorpay/index.php">
+        <?php
+        include('../Home/connect.php');
+        $pid = $_GET['id'];
+        $sql = "SELECT * FROM products WHERE id='$pid'";
+        $results = mysqli_query($conn, $sql);
+        while ($final = mysqli_fetch_array($results)) {
+          $pname=$final['name'];
+          $price=$final['price'];
+        }
 
+        ?>
+        <h2>Buy Your Product Now</h2>
+        <div class="form-field">
+          <p>Product Name</p>
+          <input class="font-weight-bolder" value="<?php echo $pname?>" type="text" name="pname" readonly>
+        </div>
+        <div class="form-field">
+          <p>Price</p>
+          <input class="font-weight-bolder" value="<?php echo $price?>" type="text" name="price" readonly>
+        </div>
         <div class="form-field">
           <p>Your Name</p>
           <input class="font-weight-bolder" type="text" placeholder="Your Name" name="name" required>
@@ -55,28 +73,20 @@ session_start();
           <p>Address</p>
           <textarea class="font-weight-bolder" name="address" id="address" cols="30" rows="10" required></textarea>
         </div>
+        <div class="form-field">
+          <p>time</p>
+          <input class="font-weight-bolder" type="time" name="time" value="<?php echo date('h:i:s')?>">
+        </div>
+        <div class="form-field">
+          <p>date</p>
+          <input class="font-weight-bolder" type="date" name="date" value="<?php echo date('Y-m-d')?>">
+        </div>
         <br>
 
-        <select class="custom-select" name="product">
-          <?php
-          include('../Home/connect.php');
-          $id = $_GET['id'];
-          $sql = "SELECT * FROM services WHERE saloon_id='$id'";
-          $results = $conn->query($sql);
-          echo $sql;
-          while ($final = $results->fetch_assoc()) {
-          ?>
-            <option name="service" value="<?php echo $final['sid'];
-                                          echo $final['service'] . '  ' . (($final['price']) + (($final['price'] * 10) / 100)) . 'Rs.' ?>"><?php echo $final['service'] . ' || ' . (($final['price']) + (($final['price'] * 10) / 100)) . 'Rs' ?></option>
 
 
-          <?php
-          }
-          ?>
-        </select>
-
-          <input type="text" value="<?php echo $_GET['id']?>" name="sal_id" hidden>
-        <button type="submit" class="btn btn-success" name="confirm" style="font-size: 13px;">Confirm</button>
+        <input type="text" value="<?php echo $_GET['id'] ?>" name="pid" hidden>
+        <button type="submit" class="btn btn-success" name="buynow" style="font-size: 13px;">Buy Now</button>
 
       </form>
     </div>

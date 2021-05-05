@@ -111,7 +111,7 @@ session_start();
                     <h3><label class="mt-4" style="color: red; font-weight:bold;">DESCRIPTION :</label><br> <?php echo $final['description'] ?></h3>
                     <hr><br>
                    <a href="buyproduct.php?id=<?php echo $id?>">
-                    <button type="button" class="btn btn-success mt-3" style="font-size:18px;">Buy Product</button>
+                    <button type="button" class="btn btn-success mt-3" name="buy" style="font-size:18px;">Buy Product</button>
                     </a>
                 </div>
             </div>

@@ -1,40 +1,23 @@
 <?php
 session_start();
-include('../Home/connect.php');
-if (isset($_POST['confirm'])) {
+include('connect.php');
+if (isset($_POST['buynow'])) {
     $uid = $_SESSION['id'];
-    $sal_id = $_POST['sal_id'];
+    $pid = $_POST['pid'];
+    $pname = $_POST['pname'];
+    $price = $_POST['price'];
     //$sid = $_POST['sid'];
     $uname = $_POST['name'];
     $umail = $_POST['email'];
     $umobile = $_POST['mobile_no'];
-    $date = $_POST['date'];
+    $address = $_POST['address'];
     $time = $_POST['time'];
-    $service = $_POST['service'];
+    $date = $_POST['date'];
 
-    $sid = substr($service, 0, 1);
-    $sname = substr($service, 1);
 
-    $query2 = "SELECT date,time FROM appointments WHERE date='$date' && time='$time' && sal_id='$sal_id' and sname='$service'";
-    $run = mysqli_query($conn, $query2);
-    if ($run) {
-        $rc = mysqli_num_rows($run);
-        if ($rc > 0) {
-            echo "<script>alert('Appointment already booked..Pls select time after 15-20 minutes')</script>";
-            echo "<script>window.open('../user/saloonpage.php','_self')</script>";
-        }
-        else {
-            $sql = "INSERT INTO appointments(uid,sal_id,sid,uname,email,mobile_no,date,time,sname,status,a_status) values('$uid','$sal_id','$sid','$uname','$umail','$umobile','$date','$time','$sname','payment_pending','pending')";
-            $results = mysqli_query($conn, $sql);
+    $sql = "INSERT INTO orders(uid,pid,uname,pname,address,status,email,mobile_no,time,date) VALUES('$uid','$pid','$uname','$pname','$address','pending','$umail','$umobile','$time','$date')";
+    $results = mysqli_query($conn, $sql);
     
-            if ($results) {
-                echo  "<script>alert('appointment available Proceed to payment.')</script>";
-            }
-            else{
-                echo mysqli_error($conn);
-            }
-        }
-    } 
 }
 ?>
 
@@ -45,33 +28,32 @@ if (isset($_POST['confirm'])) {
 
 
     <form>
-    <input id="aid" type="text" name="aid" value="<?php 
-            $query3 = "SELECT id FROM appointments WHERE date='$date' && time='$time' && sal_id='$sal_id'";
-            $run1 = mysqli_query($conn, $query3);
-            if ($run1) {
-                $rc1 = mysqli_num_rows($run1);
-                if ($rc1 > 0) {
-                    while($row1=mysqli_fetch_array($run1)){
-                        $aid=$row1['id'];
-                        echo $aid;
-                    }
-                } 
-                else{
-                    echo "not executed in";
-                }
-        
-            }
-        
-        ?>" hidden>
-        <input type="textbox" name="name" value="<?php echo $uname ?>" id="name" placeholder="Enter your name" readonly><br /><br />
+        <input id="order_id" type="text" name="order_id" value="<?php
+                                                                $query3 = "SELECT id FROM orders WHERE uid='$uid' && pid='$pid' && date='$date' && time='$time'";
+                                                                $run1 = mysqli_query($conn, $query3);
+                                                                if ($run1) {
+                                                                    $rc1 = mysqli_num_rows($run1);
+                                                                    if ($rc1 > 0) {
+                                                                        while ($row1 = mysqli_fetch_array($run1)) {
+                                                                            $oid = $row1['id'];
+                                                                            echo $oid;
+                                                                        }
+                                                                    } else {
+                                                                        echo "not executed in";
+                                                                    }
+                                                                }
+
+                                                                ?>">
+        <input type="textbox" name="uname" value="<?php echo $uname ?>" id="uname" placeholder="Enter your name" readonly><br /><br />
+        <input type="textbox" name="pname" value="<?php echo $pname ?>" id="pname" placeholder="Enter your name" readonly><br /><br />
         <input type="textbox" name="amt" value="
     <?php
-    $sql2 = "SELECT price FROM services WHERE sid='$sid'";
+    $sql2 = "SELECT price FROM products WHERE id='$pid'";
     $query = mysqli_query($conn, $sql2);
     if ($query) {
         while ($row = mysqli_fetch_array($query)) {
             $p = $row['price'];
-            echo ($p + ($p * 0.10));
+            echo $p;
         }
     }
     ?>
@@ -83,14 +65,15 @@ if (isset($_POST['confirm'])) {
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script>
         function pay_now() {
-            var aid=jQuery('#aid').val();
-            var name = jQuery('#name').val();
+            var order_id = jQuery('#order_id').val();
+            var uname = jQuery('#uname').val();
+            var pname = jQuery('#pname').val();
             var amt = jQuery('#amt').val();
 
             jQuery.ajax({
                 type: 'post',
                 url: 'payment_process.php',
-                data: "amt=" + amt + "&name=" + name + "&aid=" + aid,
+                data: "amt=" + amt + "&uname=" + uname + "&pname=" + pname + "&order_id=" + order_id,
                 success: function(result) {
                     var options = {
                         "key": "rzp_test_PTzJsjOtxrLKfM",
@@ -105,7 +88,7 @@ if (isset($_POST['confirm'])) {
                                 url: 'payment_process.php',
                                 data: "payment_id=" + response.razorpay_payment_id,
                                 success: function(result) {
-                                      window.location.href = "../user/myappointments.php";
+                                    window.location.href = "thank_you.php";
                                 }
                             });
                         }
