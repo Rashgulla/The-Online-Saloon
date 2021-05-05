@@ -36,7 +36,9 @@ include('adminpartials/head.php');
                     <table class="table">
                         <thead>
                             <tr>
-
+                                <th scope="col">User ID</th>
+                                <th scope="col">Product ID</th>
+                                <th scope="col">Order ID</th>
                                 <th scope="col">Username</th>
                                 <th scope="col">Product name</th>
                                 <th scope="col">Price</th>
@@ -50,13 +52,13 @@ include('adminpartials/head.php');
                         </thead>
                         <?php
                         include('../Home/connect.php');
-                        $email = $_SESSION['email'];
+                       /* $email = $_SESSION['email'];
                         $sql = "SELECT id FROM users WHERE email='email'";
                         $results = mysqli_query($conn, $sql);
                         $final = mysqli_fetch_array($results);
 
-                        $uid = $final['id'];
-                        $sql2 = "SELECT * FROM orders WHERE uid='$uid' and status='payment_done'";
+                        $uid = $final['id'];*/
+                        $sql2 = "SELECT * FROM orders WHERE status='payment_done'";
                         $results2 = mysqli_query($conn, $sql2);
 
 
@@ -82,7 +84,9 @@ include('adminpartials/head.php');
 
                             <tbody>
                                 <tr>
-
+                                    <td><?php echo $final2['uid'] ?></td>
+                                    <td><?php echo $final2['pid'] ?></td>
+                                    <td><?php echo $final2['id'] ?></td>
                                     <td><?php echo $final2['uname'] ?></td>
                                     <td><?php echo $final2['pname'] ?></td>
                                     <td><?php echo $price ?></td>
