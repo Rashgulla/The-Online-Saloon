@@ -15,7 +15,7 @@ if (isset($_POST['confirm'])) {
     $sid = substr($service, 0, 1);
     $sname = substr($service, 1);
 
-    $query2 = "SELECT date,time FROM appointments WHERE date='$date' && time='$time' && sal_id='$sal_id'";
+    $query2 = "SELECT date,time,sname FROM appointments WHERE date='$date' && time='$time' && sal_id='$sal_id' && sname='$sname'";
     $run = mysqli_query($conn, $query2);
     if ($run) {
         $rc = mysqli_num_rows($run);
