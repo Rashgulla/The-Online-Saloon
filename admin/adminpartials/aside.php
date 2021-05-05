@@ -38,6 +38,11 @@
             <i class="fa fa-th"></i> <span>Manage Saloons</span>
           </a>
         </li>
+        <li>
+          <a href="ordershow.php">
+            <i class="fa fa-th"></i> <span>Show Orders</span>
+          </a>
+        </li>
 
 
       </ul>

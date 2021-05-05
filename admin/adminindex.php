@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['email'])) {
+if (!isset($_SESSION['username'])) {
 
   echo "<script>window.open('adminhome.php','_self')</script>";
 }

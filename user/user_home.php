@@ -14,6 +14,7 @@ if (!isset($_SESSION['email'])) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="user_home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
 </head>
 
 <body>
@@ -64,6 +65,12 @@ if (!isset($_SESSION['email'])) {
                 <a href="myappointments.php" class="nav-link text-warning bg-dark">
                     <i class="fa fa-pencil-square mr-3 text-danger fa-fw"></i>
                    My Appointments
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="myorders.php" class="nav-link text-warning bg-dark">
+                    <i class="fa fa-pencil-square mr-3 text-danger fa-fw"></i>
+                   My Orders
                 </a>
             </li>
         </ul>

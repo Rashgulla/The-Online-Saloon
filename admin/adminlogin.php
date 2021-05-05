@@ -22,7 +22,9 @@ if (isset($_POST['login'])) {
     if ($email == $final['username'] and $password == $final['password']) {
         $_SESSION['username'] = $final['username'];
         $_SESSION['password'] = $final['password'];
-        header('location: adminindex.php');
+        echo "<script> alert('Logged In');
+        window.location.href='adminindex.php';
+        </script>";
     } else {
         echo "<script> alert('Invalid credentials');
         window.location.href='adminhome.php';
