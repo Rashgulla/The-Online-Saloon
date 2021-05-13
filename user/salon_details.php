@@ -85,20 +85,55 @@ session_start();
                     $results = $conn->query($sql);
                     while ($final = $results->fetch_assoc()) {
                     ?>
-                        <div class="col-sm-9">
+                        <div class="col-sm-12">
 
 
                             <img src="../saloon_admin/uploads/<?php echo $final['picture'] ?>" class="mt-4" alt="" style="height: 250px; width: 250px;"><br>
                             <h3><label class="mt-4" style="color: red; font-weight:bold;">Saloon Name :</label><?php echo $final['username'] ?><br> </h3>
                             <hr><br>
-                            <h3 class="text-lowercase"><label class="mt-4" style="color: red; font-weight:bold;">Email :</label><?php echo $final['email'] ?><br> </h3>
+                            <h3 class="text-lowercase"><label class="mt-1" style="color: red; font-weight:bold;">Email :</label><?php echo $final['email'] ?><br> </h3>
                             <hr><br>
-                            <h3><label class="mt-4" style="color: red; font-weight:bold;">Mobile No. :</label><?php echo $final['mobile_no'] ?><br> </h3>
+                            <h3><label class="mt-1" style="color: red; font-weight:bold;">Mobile No. :</label><?php echo $final['mobile_no'] ?><br> </h3>
                             <hr><br>
-                            <h3><label class="mt-4" style="color: red; font-weight:bold;">Address :</label><?php echo $final['address'] ?><br> </h3>
+                            <h3><label class="mt-1" style="color: red; font-weight:bold;">Address :</label><?php echo $final['address'] ?><br> </h3>
                             <hr><br>
+                            <h3><label class="mt-1" style="color: red; font-weight:bold;">Services :</label> </h3>
 
-                            <a href="appointment.php?id=<?php echo $id?>">
+                            <?php
+                            $sql2 = "SELECT * FROM services WHERE saloon_id='$id'";
+                            $results2 = mysqli_query($conn, $sql2);
+
+                            ?>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+
+                                        <th scope="col">Service</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Description</th>
+                                    </tr>
+                                </thead>
+
+                                <?php
+                                while ($final2 = mysqli_fetch_array($results2)) {
+
+
+                                ?>
+                                    <tbody>
+                                        <tr>
+
+
+                                            <td><?php echo $final2['service'] ?></td>
+                                            <td><?php echo $final2['price'] ?></td>
+                                            <td><?php echo $final2['description'] ?></td>
+                                        </tr>
+                                    </tbody>
+                                <?php
+                                }
+                                ?>
+                            </table>
+
+                            <a href="appointment.php?id=<?php echo $id ?>">
                                 <button type="button" id="saloon_id" value="<?php echo $final['saloon_id'] ?>" class="btn btn-success" style="font-size: 13px;">Get Appointment</button>
                             </a>
                         </div>
